@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui" />
+    <title> Today's Prices </title>
+    <link rel="icon" href="./assets/css/logo/32x32.png.png">
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="./assets/css/style.css?">
+    <!--Bootstrap CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- FontAwesoma CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="header_container d-flex justify-content-between  align-items-center">
+            <div class="header_left d-flex justify-content-between ">
+                <div class="header_logo">
+                    <a href="#" target="_self">
+                        <img class="w-100 h-100" src="./assets/css/logo/header_logo.svg" alt="header_logo"
+                            style="object-fit: cover;">
+                    </a>
+                </div>
+                <nav class="my_navbar">
+                    <ul class="navbar_list d-flex">
+
+                        <li class="nav_list_item">
+                            <a href="javascript:void(0)" target="_self">Exchange</a>
+                        </li>
+
+                        <li class="nav_list_item">
+                            <a href="javascript:void(0)" target="_self">
+                                Buy Crypto <i class="fas fa-angle-down "></i>
+                            </a>
+                            <ul class="navbar_dropdown">
+
+                                <li class="dropdown_item w-100">
+                                    <a href="#"> nothing </a>
+                                </li>
+
+                                <li class="dropdown_item w-100">
+                                    <a href="#"> something </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav_list_item">
+                            <a href="javascript:void()" target="_self">market</a>
+                        </li>
+
+                        <li class="nav_list_item">
+                            <a href="javascript:void()" target="_self">discover</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header_right   justify-content-between align-items-center ">
+                <a class="trade_btn" href="#" target="_self">
+                    trade
+                </a>
+
+                <div class="lang_menu  justify-content-between align-items-center ">
+
+                    <div id="lang" class="lang d-flex justify-content-between align-items-center ">
+                        <p>
+                            <img src="./assets/css/logo/united-states.png" alt="">
+                        </p>
+                        <span>
+                            <i class="fas fa-angle-down "></i>
+                        </span>
+                    </div>
+
+                    <ul class="lang_list">
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/azerbaijan.png" alt="lang_list_flag">
+                        </li>
+
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/united-states.png" alt="lang_list_flag">
+                        </li>
+
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/russia.png" alt="lang_list_flag">
+                        </li>
+                    </ul>
+
+                </div>
+
+                <a class="open_trading" href="#" target="_self">
+                    Open Trading A / C
+                </a>
+
+                <a class="login" href="./login.html" target="_self">
+                    Login
+                </a>
+
+
+                <div class="mobile_menu_btn">
+                    <button class="btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <main class="w-100">
+
+        <section class="page_top_section w-100">
+            <div class="center">
+                <div class="page_top_in w-100 d-flex justify-content-between align-items-center">
+                    <div class="pagetop_left">
+                        <h1 class="today_pagetop_title">Today's Cryptocurrency prices</h1>
+                        <h2 class="today_pagetop_excerpt">
+                            The global crypto market cap is <span>$1.86T</span>
+                        </h2>
+                    </div>
+                    <div class="pagetop_right">
+                        <img src="./assets/images/pageTop.png" alt="pagetop_img">
+                    </div>
+                </div>
+                <div class="pagetop_bottom  d-flex ">
+
+                    <div class="pagetop_bottom_item d-flex  ">
+
+                        <div class="pagetop_item">
+                            <img src="./assets/images/coin_symbo1l.png" alt="coin_symbol">
+                        </div>
+
+                        <div class="pagetop_bottom_item_text d-flex flex-column ">
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <span class="coin_name_span"> btc/utc</span>
+                                <span class="coin_price_decrease_discount"> -0.79% </span>
+                            </div>
+
+                            <span class="today_coin_price">36,641.20</span>
+
+                            <span class="today_old_price">36,641.20</span>
+                        </div>
+
+                        <div class="toDay_coin_chart">
+                            <div class="pagetopChart">
+                                <canvas id="pageTopChart1" ></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagetop_bottom_item d-flex  ">
+
+                        <div class="pagetop_item">
+                            <img src="./assets/images/coin_symbo1l.png" alt="coin_symbol">
+                        </div>
+
+                        <div class="pagetop_bottom_item_text d-flex flex-column ">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="coin_name_span"> btc/utc</span>
+                                <span class="coin_price_decrease_discount"> -0.79% </span>
+                            </div>
+
+                            <span class="today_coin_price">36,641.20</span>
+
+                            <span class="today_old_price">36,641.20</span>
+                        </div>
+
+                        <div class="toDay_coin_chart">
+                            <div class="pagetopChart">
+                                <canvas id="pageTopChart2" ></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="pagetop_bottom_item d-flex  ">
+
+                        <div class="pagetop_item">
+                            <img src="./assets/images/coin_symbo1l.png" alt="coin_symbol">
+                        </div>
+
+                        <div class="pagetop_bottom_item_text d-flex flex-column ">
+                            <div class="d-flex justify-content-between  align-items-center ">
+                                <span class="coin_name_span"> btc/utc</span>
+                                <span class="coin_price_discount"> -0.79% </span>
+                            </div>
+
+                            <span class="today_coin_price">36,641.20</span>
+
+                            <span class="today_old_price">36,641.20</span>
+                        </div>
+
+
+                        <div class="toDay_coin_chart">
+                            <div class="pagetopChart">
+                                <canvas id="pageTopChart3" ></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="todayPrice_table_section w-100">
+            <div class="center">
+                <div class="todayPrice_table_in w-100 ">
+                    <table id="myTable">
+                        <thead>
+                            <tr>
+                                <th class="d-flex"># <img src="./assets/css/logo/sortIcon.png" alt="sort_icon">
+                                </th>
+                                <th>Name <img src="./assets/css/logo/sortIcon.png" alt="sort_icon"> </th>
+
+                                <th>Price <img src="./assets/css/logo/sortIcon.png" alt="sort_icon"> </th>
+                                <th>24h % </th>
+                                <th> 7d % </th>
+                                <th>marketcap <img src="./assets/css/logo/dolarSign.svg" alt="dollarSign"></th>
+                                <th>volume (24h) <img src="./assets/css/logo/volume.svg" alt="volume_icon"> </th>
+                                <th>chart</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="coin_number_td">
+                                    <img class="todayEmtyStar" src="./assets/images/emty_star.svg" alt="empty_star">
+                                    <img class="todayFullStar" src="./assets/images/full_star.png" alt="full_star">
+                                    1
+                                </td>
+                                <td class="coin_name_td"> <img src="./assets/images/coin_symbo1l.png" alt="bitcoin">
+                                    <span>bitcoin<b>btc</b></span>
+                                </td>
+                                <td class="today_coin_price"> 36,641.20 </td>
+                                <td class="today_percent_increase"> +6.04% </td>
+                                <td class="today_percent_decrease"> -1.71% </td>
+                                <td class="today_marketcap"> $328,564,656,654 </td>
+                                <td class="today_volume"> $328,564,656,654 </td>
+                                <td class="toDay_coin_chart">
+
+                                    <button class="buy_btn btn-primary"> buy </button>
+
+                                    <div class="todayChart">
+                                        <canvas id="todayTableChart1"  ></canvas>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="coin_number_td">
+                                    <img class="todayEmtyStar" src="./assets/images/emty_star.svg" alt="empty_star">
+                                    <img class="todayFullStar" src="./assets/images/full_star.png" alt="full_star">
+                                    2
+                                </td>
+                                <td> <img src="./assets/images/etherium.png" alt=""> <span>ethereum<b>ETH</b></span>
+                                </td>
+                                <td class="today_coin_price"> 36,641.20 </td>
+                                <td class="today_percent_increase"> +6.04% </td>
+                                <td class="today_percent_decrease"> -1.71% </td>
+                                <td class="today_marketcap"> $328,564,656,654 </td>
+                                <td class="today_volume"> $328,564,656,654 </td>
+                                <td class="toDay_coin_chart">
+
+                                    <button class="buy_btn btn-primary"> buy </button>
+
+                                    <div class="todayChart">
+                                        <canvas id="todayTableChart2"></canvas>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="coin_number_td">
+                                    <img class="todayEmtyStar" src="./assets/images/emty_star.svg" alt="empty_star">
+                                    <img class="todayFullStar" src="./assets/images/full_star.png" alt="full_star">
+                                    3
+                                </td>
+                                <td> <img src="./assets/images/eos.png" alt=""> <span>EOS<b>eos.io</b></span> </td>
+                                <td class="today_coin_price"> 36,641.20 </td>
+                                <td class="today_percent_increase"> +6.04% </td>
+                                <td class="today_percent_decrease"> -1.71% </td>
+                                <td class="today_marketcap"> $328,564,656,654 </td>
+                                <td class="today_volume"> $328,564,656,654 </td>
+                                <td class="toDay_coin_chart">
+
+                                    <button class="buy_btn btn-primary"> buy </button>
+
+                                    <div class="todayChart">
+                                        <canvas id="todayTableChart3"></canvas>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="coin_number_td">
+                                    <img class="todayEmtyStar" src="./assets/images/emty_star.svg" alt="empty_star">
+                                    <img class="todayFullStar" src="./assets/images/full_star.png" alt="full_star">
+                                    4
+                                </td>
+                                <td> <img src="./assets/images/tether.png" alt=""> <span>tether<b>usdt</b></span> </td>
+                                <td class="today_coin_price"> 36,641.20 </td>
+                                <td class="today_percent_increase"> +6.04% </td>
+                                <td class="today_percent_decrease"> -1.71% </td>
+                                <td class="today_marketcap"> $328,564,656,654 </td>
+                                <td class="today_volume"> $328,564,656,654 </td>
+                                <td class="toDay_coin_chart">
+
+                                    <button class="buy_btn btn-primary"> buy </button>
+
+                                    <div class="todayChart">
+                                        <canvas id="todayTableChart4"></canvas>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="coin_number_td">
+                                    <img class="todayEmtyStar" src="./assets/images/emty_star.svg" alt="empty_star">
+                                    <img class="todayFullStar" src="./assets/images/full_star.png" alt="full_star">
+                                    5
+                                </td>
+                                <td> <img src="./assets/images/cardano.png" alt=""> <span>cardano<b>ada</b></span> </td>
+                                <td class="today_coin_price"> 36,641.20 </td>
+                                <td class="today_percent_increase"> +6.04% </td>
+                                <td class="today_percent_decrease"> -1.71% </td>
+                                <td class="today_marketcap"> $328,564,656,654 </td>
+                                <td class="today_volume"> $328,564,656,654 </td>
+                                <td class="toDay_coin_chart">
+
+                                    <button class="buy_btn btn-primary"> buy </button>
+
+                                    <div class="todayChart">
+                                        <canvas id="todayTableChart5"></canvas>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="coin_number_td">
+                                    <img class="todayEmtyStar" src="./assets/images/emty_star.svg" alt="empty_star">
+                                    <img class="todayFullStar" src="./assets/images/full_star.png" alt="full_star">
+                                    6
+                                </td>
+                                <td> <img src="./assets/images/dodgecoin.png" alt=""> <span>dodgecoin</span> </td>
+                                <td class="today_coin_price"> 36,641.20 </td>
+                                <td class="today_percent_increase"> +6.04% </td>
+                                <td class="today_percent_decrease"> -1.71% </td>
+                                <td class="today_marketcap"> $328,564,656,654 </td>
+                                <td class="today_volume"> $328,564,656,654 </td>
+                                <td class="toDay_coin_chart">
+
+                                    <button class="buy_btn btn-primary"> buy </button>
+
+                                    <div class="todayChart">
+                                        <canvas id="todayTableChart6"></canvas>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="coin_number_td">
+                                    <img class="todayEmtyStar" src="./assets/images/emty_star.svg" alt="empty_star">
+                                    <img class="todayFullStar" src="./assets/images/full_star.png" alt="full_star">
+                                    7
+                                </td>
+                                <td> <img src="./assets/images/xrp.png" alt=""> <span>XRP<b>xrp</b></span> </td>
+                                <td class="today_coin_price"> 36,641.20 </td>
+                                <td class="today_percent_increase"> +6.04% </td>
+                                <td class="today_percent_decrease"> -1.71% </td>
+                                <td class="today_marketcap"> $328,564,656,654 </td>
+                                <td class="today_volume"> $328,564,656,654 </td>
+                                <td class="toDay_coin_chart">
+
+                                    <button class="buy_btn btn-primary"> buy </button>
+
+                                    <div class="todayChart">
+                                        <canvas id="todayTableChart7"></canvas>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+
+                            <tr class="coin_number_td">
+                                <td>
+                                    <img class="todayEmtyStar" src="./assets/images/emty_star.svg" alt="empty_star">
+                                    <img class="todayFullStar" src="./assets/images/full_star.png" alt="full_star">
+                                    8
+                                </td>
+                                <td> <img src="./assets/images/polkadot.png" alt=""> <span>polkadot<b>dot</b></span>
+                                </td>
+                                <td class="today_coin_price"> 36,641.20 </td>
+                                <td class="today_percent_increase"> +6.04% </td>
+                                <td class="today_percent_decrease"> -1.71% </td>
+                                <td class="today_marketcap"> $328,564,656,654 </td>
+                                <td class="today_volume"> $328,564,656,654 </td>
+                                <td class="toDay_coin_chart">
+
+                                    <button class="buy_btn btn-primary"> buy </button>
+
+                                    <div class="todayChart">
+                                        <canvas id="todayTableChart8"></canvas>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="coin_number_td">
+                                    <img class="todayEmtyStar" src="./assets/images/emty_star.svg" alt="empty_star">
+                                    <img class="todayFullStar" src="./assets/images/full_star.png" alt="full_star">
+                                    9
+                                </td>
+                                <td> <img src="./assets/images/usd_coin.png" alt=""> <span>USDcoin<b>usdc</b></span>
+                                </td>
+                                <td class="today_coin_price"> 36,641.20 </td>
+                                <td class="today_percent_increase"> +6.04% </td>
+                                <td class="today_percent_decrease"> -1.71% </td>
+                                <td class="today_marketcap"> $328,564,656,654 </td>
+                                <td class="today_volume"> $328,564,656,654 </td>
+                                <td class="toDay_coin_chart">
+
+                                    <button class="buy_btn btn-primary"> buy </button>
+
+                                    <div class="todayChart">
+                                        <canvas id="todayTableChart9"></canvas>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="coin_number_td">
+                                    <img class="todayEmtyStar" src="./assets/images/emty_star.svg" alt="empty_star">
+                                    <img class="todayFullStar" src="./assets/images/full_star.png" alt="full_star">
+                                    10
+                                </td>
+                                <td> <img src="./assets/images/uniswap.png" alt=""> <span>uniswap <b>uni</b></span>
+                                </td>
+                                <td class="today_coin_price"> 36,641.20 </td>
+                                <td class="today_percent_increase"> +6.04% </td>
+                                <td class="today_percent_decrease"> -1.71% </td>
+                                <td class="today_marketcap"> $328,564,656,654 </td>
+                                <td class="today_volume"> $328,564,656,654 </td>
+
+                                <td class="toDay_coin_chart">
+                                    <button class="buy_btn btn-primary"> buy </button>
+                                    <div class="todayChart">
+                                        <canvas id="todayTableChart10"></canvas>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="learn_earn_section">
+            <div class="center">
+                <div class="learn_earn_section_in d-flex flex-column align-items-center w-100 ">
+
+                    <div class="learn_section_title">
+                        <h2>
+                            Learn and earn
+                        </h2>
+                        <p>
+                            Stacks is a production-ready library of stackable content blocks built in React Native.
+                        </p>
+                    </div>
+
+                    <div class="learn_earn_items_container d-flex  w-100  flex-wrap ">
+                        <div class="learn_earn_item d-flex flex-column ">
+                            <div class="learn_earn_item_img w-100 ">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/learn_earn_img1.png" alt="learnanearn1">
+                                    <button>
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <span class="learn_earn_categoryPurple  ">
+                                learn & earn
+                            </span>
+                            <h3 class="learn_earn_title">
+                                <a href="javascript:void(0)">
+                                    Learn about UI8 coin and earn an All-Access Pass
+                                </a>
+                            </h3>
+                            <div class="about_item d-flex ">
+                                <div class="about_author d-flex align-items-center ">
+                                    <img src="./assets/images/trade_img3.png" alt="author_image">
+
+                                    <a class="author_name" href="javascript:void(0)">
+                                        author name
+                                    </a>
+
+                                </div>
+                                <span class="today_datetime">
+                                    Feb 03,2021
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="learn_earn_item d-flex flex-column ">
+                            <div class="learn_earn_item_img w-100 ">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/todayLearnImage.png" alt="learnanearn1">
+                                    <button>
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <span class="learn_earn_categoryGreen  ">
+                                weekly watchlist airdrop
+                            </span>
+                            <h3 class="learn_earn_title">
+                                <a href="javascript:void(0)">
+                                    Learn about UI8 coin and earn an All-Access Pass
+                                </a>
+                            </h3>
+                            <div class="about_item d-flex ">
+                                <div class="about_author d-flex align-items-center ">
+                                    <img src="./assets/images/trade_img3.png" alt="author_image">
+
+                                    <a class="author_name" href="javascript:void(0)">
+                                        author name
+                                    </a>
+
+                                </div>
+                                <span class="today_datetime">
+                                    Feb 03,2021
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="learn_earn_item d-flex flex-column ">
+                            <div class="learn_earn_item_img w-100 ">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/learn_earn_img1.png" alt="learnanearn1">
+                                    <button>
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <span class="learn_earn_categoryGreen  ">
+                                weekly watchlist airdrop
+                            </span>
+                            <h3 class="learn_earn_title">
+                                <a href="javascript:void(0)">
+                                    Learn about UI8 coin and earn an All-Access Pass
+                                </a>
+                            </h3>
+                            <div class="about_item d-flex ">
+                                <div class="about_author d-flex align-items-center ">
+                                    <img src="./assets/images/trade_img3.png" alt="author_image">
+
+                                    <a class="author_name" href="javascript:void(0)">
+                                        author name
+                                    </a>
+
+                                </div>
+                                <span class="today_datetime">
+                                    Feb 03,2021
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="learn_earn_item d-flex flex-column ">
+                            <div class="learn_earn_item_img w-100 ">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/learn_earn_img1.png" alt="learnanearn1">
+                                    <button>
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <span class="learn_earn_categoryGreen  ">
+                                weekly watchlist airdrop
+                            </span>
+                            <h3 class="learn_earn_title">
+                                <a href="javascript:void(0)">
+                                    Learn about UI8 coin and earn an All-Access Pass
+                                </a>
+                            </h3>
+                            <div class="about_item d-flex ">
+                                <div class="about_author d-flex align-items-center ">
+                                    <img src="./assets/images/trade_img3.png" alt="author_image">
+
+                                    <a class="author_name" href="javascript:void(0)">
+                                        author name
+                                    </a>
+
+                                </div>
+                                <span class="today_datetime">
+                                    Feb 03,2021
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="learn_earn_item d-flex flex-column ">
+                            <div class="learn_earn_item_img w-100 ">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/todayLearnImage3.png" alt="learnanearn1">
+                                    <button>
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <span class="learn_earn_categoryBlue  ">
+                                featured
+                            </span>
+                            <h3 class="learn_earn_title">
+                                <a href="javascript:void(0)">
+                                    Learn about UI8 coin and earn an All-Access Pass
+                                </a>
+                            </h3>
+                            <div class="about_item d-flex ">
+                                <div class="about_author d-flex align-items-center ">
+                                    <img src="./assets/images/trade_img3.png" alt="author_image">
+
+                                    <a class="author_name" href="javascript:void(0)">
+                                        author name
+                                    </a>
+
+                                </div>
+                                <span class="today_datetime">
+                                    Feb 03,2021
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  id="loadMore"  class="load_more_btn d-flex  align-items-center ">
+                        <div  class="lds-spinner"   > 
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <span>
+                            load more
+                        </span>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-100">
+        <div class="footer_in w-100">
+            <div class="center">
+                <div class="footer_in_basic w-100  d-flex  ">
+
+                    <div class="footer_logo">
+                        <a href="javascript:void(0)">
+                            <img src="./assets/images/foooter_logo.png" alt="footer_logo">
+                        </a>
+                    </div>
+
+                    <div class="operations">
+                        <ul class="operation_list d-flex flex-column">
+                            <li class="operation_item">
+                                <a href="javascript:void(0)">Exchange</a>
+                            </li>
+                            <li class="operation_item">
+                                <a href="javascript:void(0)">Buy crypto</a>
+                            </li>
+                            <li class="operation_item">
+                                <a href="javascript:void(0)">Market</a>
+                            </li>
+                            <li class="operation_item">
+                                <a href="javascript:void(0)">Learn crypto</a>
+                            </li>
+                            <li class="operation_item">
+                                <a href="javascript:void(0)">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contacts">
+                        <address class="w-100">
+                            <h4 class="contact_title">contact</h4>
+                            <ul class="adres_list d-flex flex-column">
+                                <li class="adres_item">
+                                    <a href="javascript:void(0)">
+                                        43252 Borer Mountains
+                                    </a>
+                                </li>
+                                <li class="adres_item">
+                                    <a href="javascript:void(0)">
+                                        Zackerychester Bahamas
+                                    </a>
+                                </li>
+                                <li class="adres_item">
+                                    <a href="javascript:void(0)">
+                                        Bahamas
+                                    </a>
+                                </li>
+                                <li class="adres_item">
+                                    <a href="tel: 732-528-4945">
+                                        732-528-4945
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+
+                    <div class="newsletter">
+                        <h4 class="newsletter_title">newsletter</h4>
+                        <p class="newsletter_excerpt">
+                            Subscribe our newsletter to get more free design course and resource.
+                        </p>
+                        <div class="email_container">
+                            <input type="email" placeholder="Enter your email">
+                            <button class="send_mail_btn" type="button">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom w-100 ">
+            <div class="center">
+                <div class="footer_bottom_in w-100 d-flex justify-content-between ">
+                    <div class="company_rights">
+                        <p>
+                            © 2021 - All Rights Reserved . Designed by <a href="javascript:void(0)">HajMa Group of
+                                Companies</a>.
+                        </p>
+                    </div>
+                    <div class="sosial_networks">
+                        <ul class="networks_list">
+                            <li class="list_item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/css/logo/facebook_icon.svg" alt="networks">
+                                </a>
+                            </li>
+
+                            <li class="list_item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/css/logo/twitter_icon.svg" alt="networks">
+                                </a>
+                            </li>
+
+                            <li class="list_item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/css/logo/istagram_icon.svg" alt="networks">
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile_menu">
+        <div class="mobile_menu_inner p-1 ">
+            <ul class="mobile_menu_list d-flex flex-column">
+
+                <li class="mobile_menu_list_item">
+                    <a href="javascript:void(0)">
+                        exchange
+                    </a>
+                </li>
+
+                <li class="mobile_menu_list_item">
+
+                    <div class="d-flex w-100 justify-content-between ">
+                        <a class="mobile_crypto_buy w-100 " data-bs-toggle="collapse" href="#collapseExample"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            buy crypto
+
+                        </a>
+                        <span id="down_arrow"> <i class="fas fa-angle-down "></i></span>
+                    </div>
+
+                    <div class="my_collapse_mobile collapse" id="collapseExample">
+                        <div>
+                            <ul class="d-flex flex-column p-0 ">
+                                <li class="p-2">
+                                    <a href="javascript:void(0)"> Smth</a>
+                                </li>
+
+                                <li class="p-2">
+                                    <a href="javascript:void(0)"> Smth</a>
+                                </li>
+
+                                <li class="p-2">
+                                    <a href="javascript:void(0)"> Smth</a>
+                                </li>
+
+                                <li class="p-2">
+                                    <a href="javascript:void(0)"> Smth</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mobile_menu_list_item">
+                    <a href="javascript:void(0)">
+                        marget
+                    </a>
+                </li>
+
+                <li class="mobile_menu_list_item">
+                    <a href="javascript:void(0)">
+                        discover
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="mobile_menu_buttons_container  flex-column ">
+                <a class="mobile_trade_btn mb-2 " href="#" target="_self">
+                    trade
+                </a>
+
+                <a class="mobile_open_trading  mb-2 " href="#" target="_self">
+                    Open Trading A / C
+                </a>
+
+                <a class="mobil_login  mb-2 " href="./login.html" target="_self">
+                    Login
+                </a>
+
+                <div class="mobile_lang_menu d-flex justify-content-between align-items-center ">
+
+                    <div id="mobile_lang" class="lang d-flex justify-content-between align-items-center ">
+                        <p>
+                            <img src="./assets/css/logo/united-states.png" alt="">
+                        </p>
+                        <span>
+                            <i class="fas fa-angle-down "></i>
+                        </span>
+                    </div>
+
+                    <ul id="mobile_lang_list" class=" lang_list">
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/azerbaijan.png" alt="lang_list_flag">
+                        </li>
+
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/united-states.png" alt="lang_list_flag">
+                        </li>
+
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/russia.png" alt="lang_list_flag">
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"
+        integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./assets/js/header.js"></script>
+
+    <script src="./assets/js/myCoinChart.js"> </script>
+
+    <script>
+        $('#loadMore').on('click',function(){
+            $('.lds-spinner').css({'display':'block'});
+        });
+        chartJS(myArray2,'todayTableChart');
+        chartJS(myArray,'pageTopChart');
+    </script>
+
+</body>

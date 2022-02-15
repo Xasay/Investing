@@ -1,0 +1,246 @@
+.w_60 {
+  width: 60%;
+}
+
+.w_20 {
+  width: 20%;
+}
+
+.green {
+  color: #58bd7d !important;
+}
+
+.pass_artmaAzalma span {
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.rightTableContainer_list {
+  padding: 0px;
+}
+
+.rightTableContainer_list button {
+  padding: 7px 15px;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 21px;
+  color: #777e90;
+}
+
+.rightTableContainer_list button.my_active {
+  background: #e6e8ec;
+  border-radius: 128.5px;
+  color: black;
+}
+
+.coinSearchForm div {
+  border: 2px solid #e6e8ec;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  color: #777e90;
+  padding: 10px 16px;
+}
+
+.coinSearchForm div button {
+  background-color: transparent;
+  color: #777e90;
+}
+
+/* .singleChartContainer_left_table {
+  th {
+    font-size: 12px;
+  }
+
+  tr {
+    margin: 5px 0px;
+  }
+
+  td {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+ */
+.emtyStar {
+  margin-right: 5px;
+}
+
+.fullStar {
+  display: none;
+  margin-right: 5px;
+}
+
+.greyColor {
+  color: #777e90;
+}
+
+.myTableWithStar tr:hover {
+  cursor: pointer;
+}
+
+.myTableWithStar tr:hover .emtyStar {
+  display: none;
+}
+
+.myTableWithStar tr:hover .fullStar {
+  display: block;
+}
+
+.rightTableContainerSecond_list {
+  padding: 0px;
+}
+
+.rightTableContainerSecond_list button {
+  padding: 7px 15px;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 21px;
+  color: #777e90;
+}
+
+.rightTableContainerSecond_list button.my_active {
+  background: #e6e8ec;
+  border-radius: 128.5px;
+  color: black;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  cursor: pointer;
+  border: 5px solid #777e90;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  cursor: pointer;
+  border: 5px solid #777e90;
+  border-radius: 50%;
+}
+
+/* medaia sorgular */
+@media (max-width: 1075px) {
+  .w_20 {
+    width: 25%;
+  }
+  .w_60 {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 890px) {
+  .rightTableContainerSecond_list button {
+    padding: 5px;
+  }
+  .w_20 {
+    min-width: 215px;
+    width: 48% !important;
+  }
+  .mySecondCssClass {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  .w_60 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    min-width: 435px;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .mySecondtableContainerBlock_table {
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    position: relative;
+  }
+  .mySecondtableContainerBlock_table table {
+    min-width: 480px;
+  }
+  /* Works on Chrome, Edge, and Safari */
+  .mySecondtableContainerBlock_table::-webkit-scrollbar {
+    width: 12px;
+  }
+  .mySecondtableContainerBlock_table::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .mySecondtableContainerBlock_table::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 3px solid transparent;
+  }
+}
+
+@media (max-width: 455px) {
+  .w_20 {
+    width: 100% !important;
+    overflow-y: scroll;
+    height: 350px;
+  }
+  .w_20 {
+    width: 100% !important;
+    overflow-y: scroll;
+    height: 350px;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    position: relative;
+  }
+  /* Works on Chrome, Edge, and Safari */
+  .w_20::-webkit-scrollbar {
+    width: 12px;
+  }
+  .w_20::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .w_20::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 3px solid   transparent;
+  }
+  .w_60 {
+    min-width: unset;
+  }
+}
+/*# sourceMappingURL=singleWaveChart.css.map */

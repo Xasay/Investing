@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'DM Sans Medium ';
+    src: url('./my_fonts/DMSans-Medium.eot');
+    src: url('./my_fonts/DMSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./my_fonts/DMSans-Medium.woff2') format('woff2'),
+        url('./my_fonts/DMSans-Medium.woff') format('woff'),
+        url('./my_fonts/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans Regular ';
+    src: url('./my_fonts/DMSans-Regular.eot');
+    src: url('./my_fonts/DMSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./my_fonts/DMSans-Regular.woff2') format('woff2'),
+        url('./my_fonts/DMSans-Regular.woff') format('woff'),
+        url('./my_fonts/DMSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans Bold';
+    src: url('./my_fonts/DMSans-Bold.eot');
+    src: url('./my_fonts/DMSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./my_fonts/DMSans-Bold.woff2') format('woff2'),
+        url('./my_fonts/DMSans-Bold.woff') format('woff'),
+        url('./my_fonts/DMSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins Bold ';
+    src: url('./my_fonts/Poppins-Bold.eot');
+    src: url('./my_fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./my_fonts/Poppins-Bold.woff2') format('woff2'),
+        url('./my_fonts/Poppins-Bold.woff') format('woff'),
+        url('./my_fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins Thin ';
+    src: url('./my_fonts/Poppins-Thin.eot');
+    src: url('./my_fonts/Poppins-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./my_fonts/Poppins-Thin.woff2') format('woff2'),
+        url('./my_fonts/Poppins-Thin.woff') format('woff'),
+        url('./my_fonts/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins Regular ';
+    src: url('./my_fonts/Poppins-Regular.eot');
+    src: url('./my_fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./my_fonts/Poppins-Regular.woff2') format('woff2'),
+        url('./my_fonts/Poppins-Regular.woff') format('woff'),
+        url('./my_fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

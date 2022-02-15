@@ -1,0 +1,2362 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url('./todayPrices.css');
+@import url('./blogChain.css');
+@import url('./beginnerGuide.css');
+@import url('./help.css');
+@import url('./singleCoin.css');
+@import url('./singleWaveChart.css');
+
+* {
+  font-family: "DM Sans Regular ";
+}
+
+:root {
+  --grey_font: #777e90;
+  --bg-red: #e71e00;
+}
+
+/* ************   start section  ************************** */
+
+.start_left {
+  width: 45%;
+}
+
+.start_left h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -1.28px;
+  color: #23262f;
+}
+
+.start_excerpt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777e90;
+}
+
+.start_btn {
+  background: #3772ff;
+  border: 1px solid #3772ff;
+  border-radius: 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fcfcfd;
+  text-decoration: none;
+  padding: 10px;
+  width: 174px;
+  text-align: center;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.start_btn:hover {
+  background-color: white;
+  color: #3772ff;
+}
+
+.down_arrow {
+  border: 2px solid #e6e8ec;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 30px;
+  text-align: center;
+  color: #b1b5c3;
+  margin-top: 84px;
+}
+
+.down_arrow:hover {
+  color: #b1b5c3;
+}
+
+.start_right {
+  width: 50%;
+}
+
+/******************* Start bottom***********************/
+.statistica_list {
+  background-color: #f4f5f6;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 20px;
+  margin-top: 57px;
+}
+
+.statistica_list .list_item {
+  border-radius: 20px;
+  width: calc(94% / 4);
+  padding: 36px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.statistica_list .list_item:hover {
+  background-color: white;
+  filter: drop-shadow(0px 5px 5px rgba(15, 15, 15, 0.1));
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(15, 15, 15, 0.1));
+}
+
+.coin_img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 22px;
+}
+
+.statistica_list .discount {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #777e90;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.statistica_list .discount_percent {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fcfcfd;
+  background: #ff6838;
+  border-radius: 24px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+.statistica_list .increase_percent {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fcfcfd;
+  background: #58bd7d;
+  border-radius: 24px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+.statistica_list .main_price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #23262f;
+}
+
+.statistica_list .litlle_price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #23262f;
+}
+
+/***************** Register section *************************/
+
+.register_section {
+  margin-top: 160px;
+}
+
+.register_container {
+  align-items: center;
+}
+
+.register_left {
+  width: 55%;
+}
+
+.register_title {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -1.28px;
+  color: #23262f;
+}
+
+.register_excerpt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777e90;
+}
+
+.register_img {
+  width: 100%;
+  height: 667px;
+}
+
+/* register right */
+
+.register_right {
+  height: 1024px;
+  width: 38%;
+}
+
+.login_paragraf {
+  line-height: 66px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: end;
+  color: #23262f;
+}
+
+.login_link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #3772ff;
+  text-decoration: none;
+}
+
+.signup_title {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: #23262f;
+}
+
+.signup_excerpt {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #777e90;
+  margin-top: 32px;
+}
+
+.acount_container {
+  padding-bottom: 20px;
+  padding: 20px 10px 20px;
+  border-bottom: 1px solid #ddd;
+  justify-content: center;
+}
+
+.google_acount {
+  background: #3772ff;
+  border: 1px solid #3772ff;
+  border-radius: 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fcfcfd;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0px 10px;
+  padding: 10px 50px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.google_acount:hover {
+  color: #3772ff;
+  background-color: white;
+}
+
+.apple_acount {
+  background: #23262f;
+  border: 1px solid #23262f;
+  border-radius: 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fcfcfd;
+  text-decoration: none;
+  padding: 10px 50px;
+  margin: 0px 10px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.apple_acount:hover {
+  color: #23262f;
+  background-color: white;
+}
+
+.signup_form .form-label {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #b1b5c3;
+}
+
+.signup_form .form-control {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #777e90;
+  border: 2px solid #e6e8ec;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.form-check-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777e90;
+}
+
+.show_password {
+  position: absolute;
+  top: 36px;
+  right: 10px;
+}
+
+.show_password:hover,
+.hide_password:hover {
+  cursor: pointer;
+}
+
+.hide_password {
+  display: none;
+  position: absolute;
+  top: 36px;
+  right: 10px;
+}
+
+.signup_button {
+  background: #3772ff;
+  border: 1px solid #3772ff;
+  border-radius: 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  padding: 10px 0px;
+  color: #fcfcfd;
+  margin-top: 32px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.signup_button:hover {
+  background-color: white;
+  color: #3772ff;
+}
+
+/************* News section **************/
+.news_section {
+  margin-bottom: 80px;
+}
+
+.section_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  color: #23262f;
+  text-transform: capitalize;
+}
+
+.section_heading_list {
+  padding: 0px;
+}
+
+.section_heading_list .list_item a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #777e90;
+  padding: 5px 8px;
+  border-radius: 90px;
+  text-transform: capitalize;
+
+  text-decoration: none;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
+}
+
+.section_heading_list .list_item a:hover {
+  background-color: #353945;
+  color: white;
+}
+
+.section_heading_list .list_item a.my_active {
+  background-color: #353945;
+  color: white;
+}
+
+.viewall_btn {
+  text-decoration: none;
+  padding: 15px;
+  border: 2px solid #e6e8ec;
+  box-sizing: border-box;
+  border-radius: 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #23262f;
+}
+
+.viewall_btn:hover {
+  color: #23262f;
+  background-color: rgb(233, 233, 233);
+}
+
+.news_in {
+  position: relative;
+  padding: 5px;
+}
+
+.news_left_background {
+  position: absolute;
+  object-fit: cover;
+  top: 0%;
+  left: 0%;
+  width: 77%;
+  height: 100%;
+}
+
+.news_left {
+  width: 46%;
+  position: relative;
+}
+
+.news_right {
+  position: relative;
+}
+
+.news_left_in {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.news_left_in .news_in_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.32px;
+  color: #23262f;
+}
+
+.news_left_in .learn_more {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  height: max-content;
+  text-align: center;
+  color: #23262f;
+  padding: 10px;
+  border: 2px solid #e6e8ec;
+  box-sizing: border-box;
+  border-radius: 90px;
+  width: 30%;
+}
+
+.news_left_in .left_in_excerpt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777e90;
+}
+
+.learn_more .fa-angle-right {
+  color: rgb(167, 167, 167);
+  font-size: 12px;
+}
+
+/*news right*/
+
+.news_right_item {
+  margin-bottom: 32px;
+}
+
+.news_right_item .item_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #23262f;
+}
+
+.news_right_item .item_excerpt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777e90;
+}
+
+.news_right_item .item_date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777e90;
+  position: absolute;
+  bottom: 0%;
+}
+
+.item_right {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.item_left {
+  width: 50%;
+}
+
+.item_right img {
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+.video_play_btn {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  position: absolute;
+  top: 39%;
+  left: 39%;
+  bottom: 0%;
+  right: 0%;
+  text-decoration: none;
+}
+
+.video_play_btn:hover {
+  color: grey;
+}
+
+.chartContainer {
+  width: 250px !important ;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0px auto; */
+}
+
+.trend_section_container {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  position: relative;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.trend_section_container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.trend_section_container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.trend_section_container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
+
+.table_scroll {
+  display: none;
+  font-size: 25px;
+}
+
+.trend_table {
+  margin-top: 50px;
+  min-width: 840px;
+}
+
+.trend_table thead tr {
+  top: 0%;
+  position: sticky;
+}
+
+.trend_table tbody tr td:nth-child(2) {
+  position: sticky;
+  left: 0%;
+  background-color: white;
+  z-index: 500;
+}
+
+.trend_table thead tr th:nth-child(2) {
+  position: sticky;
+  left: 0%;
+  background-color: white;
+}
+
+.trend_table th {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777e90;
+}
+
+.trend_table thead {
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.coin_name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.coin_abbv {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b1b5c3;
+}
+
+.coin_price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #23262f;
+}
+
+.increase_price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #58bd7d;
+}
+
+.reliase_price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff6838;
+}
+
+.table_trade_btn {
+  border: 2px solid #e6e8ec;
+  box-sizing: border-box;
+  border-radius: 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #23262f;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.table_trade_btn:hover {
+  color: #23262f;
+}
+
+.trend_table tr:hover {
+  background-color: #f8f8f9;
+  cursor: pointer;
+}
+
+/***************** BEcome a trader section ******************/
+
+.b_trader_in {
+  padding: 136px 66px;
+  background-color: #f4f5f6;
+}
+
+.b_trader_heading {
+  width: 40%;
+}
+
+.heading_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.96px;
+  color: #23262f;
+}
+
+.heading_excerpt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #777e90;
+  margin-top: 20px;
+}
+
+.b_trader_contactus {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #fcfcfd;
+  background: #3772ff;
+  border: 1px solid #3772ff;
+  border-radius: 90px;
+  padding: 10px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  margin-top: 64px;
+}
+
+.b_trader_contactus:hover {
+  color: #3772ff;
+  background-color: #fcfcfd;
+}
+
+/*become trader item*/
+
+.bt_item_container {
+  margin-top: 60px;
+}
+
+.bt_item_container div:not(:last-child) {
+  margin-right: 24px;
+}
+
+.b_trader_item {
+  padding: 50px 25px;
+  background-color: white;
+  width: calc(100% / 3);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.b_trader_item:hover {
+  filter: drop-shadow(0px 64px 64px rgba(15, 15, 15, 0.1));
+}
+
+.bt_item_img {
+  object-fit: cover;
+  width: 160px;
+  height: 160px;
+}
+
+.bt_item_title {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #23262f;
+  margin-top: 32px;
+  text-transform: capitalize;
+}
+.bt_item_title:hover {
+  color: #23262f;
+}
+
+.bt_item_excerpt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #777e90;
+  margin-top: 16px;
+}
+
+.bt_item_link {
+  text-decoration: none;
+  padding: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #23262f;
+  border: 2px solid #e6e8ec;
+  box-sizing: border-box;
+  border-radius: 90px;
+  margin-top: 16px;
+  background-color: #fff;
+  text-transform: capitalize;
+}
+
+.bt_item_link:hover {
+  color: #23262f;
+}
+
+/* *************** Application section ***************** */
+
+.aplications_section_in {
+  padding: 130px 80px;
+}
+
+.aplication_left {
+  width: 40%;
+}
+
+.aplication_right {
+  width: 55%;
+}
+
+.aplication_right img {
+  width: 100%;
+  height: 100%;
+}
+
+.app_heading_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  color: #23262f;
+}
+
+.app_heading_excerpt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777e90;
+}
+
+.application_item_container div:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.application_item {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.aplication_logo {
+  width: 56px;
+  height: 56px;
+  margin-right: 24px;
+}
+
+.aplication_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aplicaton_text span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777e90;
+}
+
+.aplication_name {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  color: #23262f;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.aplication_name h4 {
+  font-family: "Poppins Regular ";
+}
+
+.aplication_name:hover {
+  color: #23262f;
+}
+
+/**************** Slider section  *****************/
+
+.slider_section_in {
+  background-color: #f4f5f6;
+  padding: 130px 50px;
+}
+
+.slider_section_heading {
+  width: 43%;
+}
+
+.slider_section_logo {
+  width: 137px;
+  height: 32px;
+}
+
+.slider_section_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.96px;
+  color: #23262f;
+  margin-top: 16px;
+}
+
+.slider_section_excerpt {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #777e90;
+  margin-top: 20px;
+}
+
+.carousel-item {
+  margin-top: 70px !important ;
+}
+
+.my_carousel_item {
+  width: 63%;
+  background-color: white;
+  position: relative;
+  filter: drop-shadow(0px 5px 5px rgba(15, 15, 15, 0.1));
+  -webkit-filter: drop-shadow(0px 30px 30px rgba(15, 15, 15, 0.1));
+}
+
+.my_item_left {
+  width: 54%;
+}
+
+.my_item_right {
+  width: 44%;
+}
+
+.my_item_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide_type {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #777e90;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.slide_title {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  color: #141416;
+}
+
+.slide_excerpt {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777e90;
+}
+
+.slider_link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #23262f;
+  border: 2px solid #e6e8ec;
+  box-sizing: border-box;
+  border-radius: 90px;
+  padding: 10px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.slider_link:hover {
+  color: #23262f;
+}
+
+/********************* How it work section ***********************/
+
+.hitw_section_in {
+  padding: 130px 20px;
+}
+
+.hitw_section_heading {
+  width: 40%;
+}
+
+.hitw_heading_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.96px;
+  color: #23262f;
+}
+
+.hitw_heading_excerpt {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #353945;
+}
+
+.hitw_road_map {
+  height: 96px;
+  width: 100%;
+}
+
+.hitw_road_map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hitw_item_container div:not(:last-child) {
+  margin-right: 12px;
+}
+
+.hitw_item {
+  width: 250px;
+  margin-top: 80px;
+}
+
+.hitw_item_img {
+  display: none;
+  height: 76px;
+  width: 108px;
+}
+
+.hitw_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.hitw_item_step {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #777e90;
+}
+
+.hitw_item_link {
+  font-family: "Poppins Bold ";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #23262f;
+  text-decoration: none;
+  margin-top: 32px;
+  text-transform: capitalize;
+}
+
+.hitw_item_link:hover {
+  color: #23262f;
+}
+
+.hitw_excerpt {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #353945;
+  margin-top: 16px;
+}
+
+/***********************************  Log in page design starrt from here  ****************************************/
+
+.sign_in_section {
+  padding: 120px 50px;
+}
+
+.signin_left {
+  width: 40%;
+}
+
+.sign_in_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: #23262f;
+}
+
+.signin_excerpt {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #777e90;
+}
+
+.signin_link {
+  padding: 5px;
+  background-color: #f4f5f6;
+  background: #f4f5f6;
+  border-radius: 48px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #23262f;
+  margin-bottom: 32px;
+}
+
+.signin_link p {
+  margin-bottom: 0px;
+}
+
+.signin_link:hover {
+  color: #23262f;
+}
+
+.buttons_container {
+  padding: 10px;
+  margin: 0% auto;
+  border-top: 1px solid #ddd;
+}
+
+.buttons_container button {
+  background-color: transparent;
+  padding: 5px 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #777e90;
+}
+
+.buttons_container button:hover {
+  background: #353945;
+  color: white;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.buttons_container button.my_active {
+  background: #353945;
+  color: white;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.scan_block span {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #777e90;
+}
+
+.scan_block a {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: #3772ff;
+  text-decoration: none;
+}
+
+.have_account_block {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #23262f;
+  margin-top: 32px;
+}
+
+.have_account_block a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #3772ff;
+
+  text-decoration: none;
+}
+
+.signin_right {
+  width: 50%;
+}
+
+.signin_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.telefon_block {
+  display: none;
+}
+
+.telefon_block select{
+  width: 25%;
+}
+
+.telefon_block input[type="tel"]{
+  width: 75%;
+}
+
+.signup_form .form-select {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.form_excerpt {
+  font-family: "Poppins Regular ";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #777e90;
+}
+
+.scancode {
+  background: #f4f5f6;
+  border-radius: 16px;
+  width: 100%;
+  height: 384px;
+  padding: 64px 64px 0px 64px;
+}
+
+.scancode_in {
+  background: #fcfcfd;
+  width: 100%;
+  border-radius: 32px 32px 0px 0px;
+  padding: 32px 49px;
+  -webkit-border-radius: 32px 32px 0px 0px;
+  -moz-border-radius: 32px 32px 0px 0px;
+  -ms-border-radius: 32px 32px 0px 0px;
+  -o-border-radius: 32px 32px 0px 0px;
+  height: 100%;
+}
+
+.qr_code_container {
+  border: 2px dashed #3772ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 80%;
+  height: 170px;
+  padding: 16px;
+}
+
+.download_app_btn {
+  border: 2px solid #e6e8ec;
+  box-sizing: border-box;
+  border-radius: 90px;
+  padding: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #23262f;
+  margin-top: 48px;
+  text-decoration: none;
+}
+.download_app_btn:hover {
+  color: #23262f;
+}
+
+/*  Today Crypro Curency Price CSS codes  */
+
+.page_top_section {
+  background: #decbe9;
+}
+
+.pagetop_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -1.28px;
+  color: #23262f;
+}
+
+.chart {
+  position: relative;
+  width: 100%;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1145px) {
+  .slider_section_heading {
+    width: 52%;
+  }
+}
+
+
+@media (max-width:1130px) {
+  .qr_code_container{
+    width: 100%;
+  }
+}
+
+
+@media (max-width:1110px) {
+  .signin_right img{
+    object-fit: contain;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .hitw_heading_title {
+    font-size: 40px;
+  }
+
+  .hitw_road_map {
+    width: 93%;
+    height: 150px;
+  }
+
+  .hitw_road_map img {
+    object-fit: scale-down;
+  }
+
+  .hitw_item {
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .register_title {
+    font-size: 48px;
+  }
+
+  .news_left_in .news_in_title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 1075px) {
+  .google_acount {
+    padding: 10px 22px;
+  }
+  .apple_acount {
+    padding: 10px 26px;
+  }
+
+  .news_left_background {
+    width: 72%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .start_left h1 {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .b_trader_heading {
+    width: 45%;
+  }
+
+  .hitw_section_heading {
+    width: 46%;
+  }
+}
+
+@media (max-width: 1035px) {
+  .app_heading_title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .sign_in_section {
+    padding: 50px;
+  }
+
+  .sign_in_title {
+    font-size: 36px;
+  }
+
+  .signin_to_bitcloud .signin_left {
+    width: 47%;
+  }
+}
+
+@media (max-width: 970px) {
+  .slider_section_in {
+    padding: 69px 50px;
+  }
+
+  .slider_section_heading {
+    width: 58%;
+  }
+
+  .signin_right {
+    width: 46%;
+  }
+
+  .acount_container{
+    justify-content: space-between;
+  }
+
+  .google_acount{
+    margin: 0px;
+  }
+
+  .apple_acount{
+    margin: 0px;
+  }
+
+}
+
+@media (max-width: 950px) {
+  .news_in_title_container {
+    flex-direction: column;
+  }
+
+  .news_left_in .learn_more {
+    width: max-content;
+  }
+
+  .b_trader_heading {
+    width: 51%;
+  }
+
+  .b_trader_in {
+    padding: 65px 31px;
+  }
+}
+
+@media (max-width: 930px) {
+  .signin_to_bitcloud .signin_right img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 910px) {
+  .statistica_list .list_item {
+    padding: 9px;
+  }
+}
+
+@media (max-width: 885px) {
+  .app_heading_title {
+    font-size: 33px;
+  }
+
+  .slider_section_title {
+    font-size: 40px;
+    line-height: 43px;
+  }
+
+  .signin_to_bitcloud .signin_left {
+    width: 50%;
+  }
+}
+
+@media (max-width: 865px) {
+  .table_scroll {
+    display: inline-block;
+    animation-name: fontSize;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .coin_abbv {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .hitw_section_heading {
+    width: 59%;
+  }
+
+  .signin_left {
+    width: 47%;
+  }
+}
+
+@keyframes fontSize {
+  0%,
+  100% {
+    transform: translateX(0%) translateY(5px);
+    color: black;
+    -webkit-transform: translateX(0%) translateY(5px);
+    -moz-transform: translateX(0%) translateY(5px);
+    -ms-transform: translateX(0%) translateY(5px);
+    -o-transform: translateX(0%) translateY(5px);
+  }
+  50% {
+    transform: translateX(50%) translateY(5px);
+    color: red;
+    -webkit-transform: translateX(50%) translateY(5px);
+    -moz-transform: translateX(50%) translateY(5px);
+    -ms-transform: translateX(50%) translateY(5px);
+    -o-transform: translateX(50%) translateY(5px);
+  }
+}
+
+@media (max-width:830px) {
+    .signin_to_bitcloud .signin_left{
+      width: 54%;
+    }
+}
+
+
+
+
+@media (max-width: 825px) {
+  .register_title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  .hitw_road_map {
+    height: 70px;
+  }
+}
+
+@media (max-width: 810px) {
+  .b_trader_item {
+    padding: 16px 6px;
+  }
+
+  .signin_to_bitcloud .sign_in_title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 795px) {
+  .acount_container {
+    padding: 10px 10px 10px;
+    flex-direction: column;
+  }
+
+  .apple_acount {
+    margin: 0px 4px;
+    width: 100%;
+  }
+
+  .google_acount {
+    margin: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .signup_title {
+    font-size: 30px;
+  }
+
+  .signup_excerpt {
+    margin-top: 0px;
+  }
+
+  .register_right {
+    height: max-content;
+  }
+
+  .register_section {
+    margin-top: 14px;
+    margin-bottom: 40px;
+  }
+
+  .heading_title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 780px) {
+  .news_left_in {
+    bottom: unset;
+  }
+
+  .news_in_container {
+    flex-direction: column;
+  }
+
+  .news_left {
+    width: 100%;
+  }
+
+  .aplications_section_in {
+    padding: 32px 38px;
+  }
+}
+
+@media (max-width:760px) {
+  .sign_in_section{
+    padding: 20px;
+  }
+}
+
+
+
+@media (max-width: 745px) {
+  .news_left_background {
+    width: 100%;
+  }
+
+  .news_left_in {
+    position: unset;
+  }
+
+  .slider_section_heading {
+    width: 67%;
+  }
+
+  .hitw_section_heading {
+    width: 64%;
+  }
+
+  .hitw_excerpt {
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 720px) {
+  .sign_in_section {
+    padding: 19px;
+  }
+
+  .sign_in_title {
+    font-size: 31px;
+    line-height: 36px;
+  }
+
+  .signup_button {
+    margin-top: 10px;
+    line-height: 16px;
+  }
+
+  .signin_to_bitcloud .signin_left{
+    width: 62%;
+  }
+
+  .signin_to_bitcloud .signin_right{
+    width: 38%;
+  }
+
+
+
+}
+
+@media (max-width: 715px) {
+  .start_left h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .down_arrow {
+    margin-top: 29px;
+  }
+
+  .b_trader_in {
+    padding: 34px 11px;
+  }
+
+  .b_trader_item {
+    padding: 9px 6px;
+  }
+
+  .bt_item_container div:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .bt_item_container {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 670px) {
+  .start_excerpt {
+    font-size: 13px;
+  }
+
+  .down_arrow {
+    margin-top: 19px;
+  }
+
+  .statistica_list .list_item {
+    padding: 3px;
+    width: calc(98% / 4);
+  }
+
+  .register_img {
+    width: 100%;
+    height: 541px;
+  }
+
+  .register_container {
+    align-items: unset;
+  }
+
+  .b_trader_heading {
+    width: 58%;
+  }
+
+  .heading_title {
+    font-size: 34px;
+  }
+
+  .app_heading_title {
+    font-size: 29px;
+    line-height: 15px;
+  }
+
+  .aplication_logo {
+    margin-right: 9px;
+  }
+}
+
+@media (max-width: 660px) {
+  .bt_item_container {
+    flex-direction: column;
+  }
+
+  .b_trader_item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .bt_item_title {
+    margin-top: 0px;
+  }
+
+  .bt_item_excerpt {
+    margin-top: 0px;
+  }
+
+  .heading_title {
+    line-height: 30px;
+    font-size: 27px;
+  }
+
+  .hitw_excerpt {
+    font-size: 12px;
+  }
+
+  .hitw_heading_title {
+    font-size: 33px;
+    line-height: 29px;
+  }
+}
+
+@media (max-width: 640px) {
+  .slider_section_in {
+    padding: 42px 8px;
+  }
+
+  .slider_section_title {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .carousel-control-prev {
+    width: 6% !important;
+  }
+
+  .my_carousel_item {
+    width: 80%;
+    height: 400px;
+  }
+
+  .my_item_right {
+    width: 65%;
+    height: 290px;
+  }
+
+  .slide_title {
+    font-size: 21px;
+  }
+
+  .slide_excerpt {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 630px) {
+  .aplication_logo {
+    width: 43px;
+    height: 43px;
+  }
+
+  .my_item_right {
+    width: 58%;
+    height: 267px;
+  }
+
+  .hitw_item_link {
+    font-size: 14px;
+  }
+
+  .hitw_section_in {
+    padding: 58px 20px;
+  }
+
+   .signin_to_bitcloud .center {
+    flex-direction: column;
+  } 
+
+  .signin_to_bitcloud .signin_left{
+    width: 100%;
+  }
+
+  .signin_to_bitcloud .signin_right{
+    width: 100%;
+  }
+
+
+  .qr_code_container{
+    width: 56%;
+  }
+
+}
+
+@media (max-width: 590px) {
+  .discount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statistica_list .list_item {
+    align-items: center;
+  }
+
+  .statistica_list .discount_percent {
+    margin-left: 0px;
+  }
+
+  .statistica_list .increase_percent {
+    margin-left: 0px;
+  }
+
+  .app_heading_title {
+    font-size: 26px;
+  }
+
+  .aplications_section_in {
+    padding: 21px 14px;
+  }
+
+  .my_carousel_item {
+    width: 88%;
+  }
+
+  .carousel-control-next {
+    width: 5% !important;
+  }
+
+  .signin_left {
+    width: 53%;
+  }
+
+  .sign_in_title {
+    font-size: 27px;
+  }
+
+  .signin_right img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 575px) {
+  .start_left h1 {
+    font-size: 27px;
+    line-height: 29px;
+  }
+
+  .start_section {
+    margin-top: 20px;
+  }
+
+  .register_container {
+    align-items: unset;
+  }
+
+  .register_right {
+    width: 44%;
+  }
+
+  .register_title {
+    font-size: 28px;
+  }
+
+  .register_img {
+    height: 322px;
+  }
+}
+
+@media (max-width: 560px) {
+  .my_item_right {
+    width: 50%;
+    height: 220px;
+  }
+}
+
+@media (max-width: 540px) {
+  .heading_title {
+    line-height: 40px;
+  }
+
+  .aplication_name h4 {
+    font-size: 17px;
+  }
+
+  .hitw_road_map {
+    display: none;
+  }
+
+  .hitw_item_container {
+    flex-wrap: wrap;
+  }
+
+  .hitw_section_in {
+    padding: 58px 3px;
+  }
+
+  .hitw_item {
+    width: 25%;
+  }
+
+  .hitw_item_container div:not(:last-child) {
+    margin-right: 0px !important ;
+  }
+
+  .hitw_item_img {
+    display: block;
+  }
+
+  .hitw_item_link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .register_title {
+    font-size: 32px;
+  }
+
+  .my_carousel_item {
+    flex-direction: column;
+  }
+
+  .my_item_left {
+    width: 88%;
+  }
+
+  .slider_link {
+    position: unset;
+  }
+
+  .qr_code_container{
+    width: 73%;
+  }
+}
+
+@media (max-width: 500px) {
+  .statistica_list .main_price {
+    font-size: 19px;
+  }
+
+  .b_trader_heading {
+    width: 69%;
+  }
+
+  .slider_section_heading {
+    width: 78%;
+  }
+}
+
+/********** Mobil version****************/
+@media (max-width: 480px) {
+  .coin_name {
+    display: none;
+  }
+
+  .statistica_list {
+    flex-wrap: wrap;
+  }
+
+  .section_title {
+    font-size: 37px;
+  }
+
+  .statistica_list .list_item {
+    margin-bottom: 41px;
+    width: calc(98% / 2);
+    min-width: 100px;
+  }
+
+  .register_container {
+    flex-direction: column;
+  }
+
+  .register_left {
+    width: 100%;
+  }
+
+  .register_right {
+    width: 100%;
+  }
+
+  .item_right {
+    width: 180px;
+    height: 173px;
+  }
+
+  .news_left_in .news_in_title {
+    font-size: 18px;
+  }
+
+  .chart {
+    width: 90%;
+  }
+
+  .app_heading_title {
+    font-size: 22px;
+  }
+
+  .app_heading_excerpt {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .hitw_item_container {
+    flex-wrap: wrap;
+  }
+
+  .hitw_item {
+    width: 47%;
+    min-width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .hitw_heading_title {
+    font-size: 26px;
+  }
+
+  .hitw_heading_excerpt {
+    font-size: 13px;
+  }
+
+  .hitw_excerpt {
+    margin: 0px;
+  }
+
+  .hitw_item_container div:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .hitw_item_link {
+    margin-top: 5px;
+  }
+
+  .hitw_section_heading {
+    width: 100%;
+  }
+  /********* Forget Password media sorgular  ***********/
+
+  .sign_in_section .center {
+    flex-direction: column;
+  }
+
+  .signin_left {
+    width: 100%;
+  }
+
+  .signin_right {
+    width: 100%;
+  }
+
+  /*signin to bitcloud*/
+
+
+  .scancode{
+    padding: 0px;
+  }
+
+  .qr_code_container{
+    width: 86%;
+  }
+}
+
+@media (max-width: 455px) {
+  .start_excerpt {
+    line-height: 20px;
+  }
+
+  .aplication_left {
+    width: 47%;
+  }
+
+  .aplication_right {
+    width: 53%;
+  }
+}
+
+@media (max-width: 435px) {
+  .start_left h1 {
+    font-size: 23px;
+    line-height: 24px;
+  }
+
+  .statistica_list .main_price {
+    font-size: 17px;
+  }
+
+  .b_trader_heading {
+    width: 100%;
+  }
+
+  .my_item_right {
+    width: 55%;
+  }
+
+  .hitw_item {
+    min-width: 136px;
+  }
+}
+
+@media (max-width:410px) {
+   .sign_in_section{
+    padding: 8px ;
+  }
+}
+
+
+
+@media (max-width: 380px) {
+  .start_right {
+    line-height: 16px;
+  }
+  .aplication_name h4 {
+    font-size: 15px;
+  }
+
+  .slider_section_title {
+    font-size: 20px !important;
+    line-height: 25px;
+  }
+
+  .slider_section_heading p {
+    margin-top: 5px;
+  }
+
+  .telefon_block select{
+    width: 35%;
+  }
+
+  .telefon_block input[type="tel"]{
+    width: 65%;
+  }
+
+}
+
+@media (max-width: 365px) {
+  .start_left h1 {
+    font-size: 20px;
+  }
+
+  .section_title {
+    font-size: 30px;
+  }
+
+  .section_heading_list .list_item a {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 410px) {
+  .news_right_item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item_left {
+    width: 100%;
+  }
+
+  .item_right {
+    width: 71%;
+    height: auto;
+  }
+
+  .aplication_logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .aplicaton_text span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .app_heading_title {
+    font-size: 20px;
+  }
+
+  .aplication_name h4 {
+    font-size: 13px;
+  }
+
+  .slider_section_title {
+    font-size: 26px;
+  }
+
+  .slider_section_heading {
+    width: 100%;
+  }
+}
+
+@media (max-width: 330px) {
+  .my_item_right {
+    width: 62%;
+  }
+}

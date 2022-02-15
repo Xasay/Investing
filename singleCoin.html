@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui" />
+    <title> Single Coin </title>
+    <link rel="icon" href="./assets/css/logo/32x32.png.png">
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="./assets/css/style.css?">
+    <!--Bootstrap CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- FontAwesoma CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- chart ucun css -->
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css"
+        media="all" />
+</head>
+
+<body class="single_chart_body">
+
+    <header>
+        <div class="header_container d-flex justify-content-between  align-items-center">
+            <div class="header_left d-flex justify-content-between ">
+                <div class="header_logo">
+                    <a href="#" target="_self">
+                        <img class="w-100 h-100" src="./assets/css/logo/header_logo.svg" alt="header_logo"
+                            style="object-fit: cover;">
+                    </a>
+                </div>
+                <nav class="my_navbar">
+                    <ul class="navbar_list d-flex">
+
+                        <li class="nav_list_item">
+                            <a href="javascript:void(0)" target="_self">Exchange</a>
+                        </li>
+
+                        <li class="nav_list_item">
+                            <a href="javascript:void(0)" target="_self">
+                                Buy Crypto <i class="fas fa-angle-down "></i>
+                            </a>
+                            <ul class="navbar_dropdown">
+
+                                <li class="dropdown_item w-100">
+                                    <a href="#"> nothing </a>
+                                </li>
+
+                                <li class="dropdown_item w-100">
+                                    <a href="#"> something </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav_list_item">
+                            <a href="javascript:void()" target="_self">market</a>
+                        </li>
+
+                        <li class="nav_list_item">
+                            <a href="javascript:void()" target="_self">discover</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header_right   justify-content-between align-items-center ">
+                <a class="trade_btn" href="#" target="_self">
+                    trade
+                </a>
+
+                <div class="lang_menu  justify-content-between align-items-center ">
+
+                    <div id="lang" class="lang d-flex justify-content-between align-items-center ">
+                        <p>
+                            <img src="./assets/css/logo/united-states.png" alt="">
+                        </p>
+                        <span>
+                            <i class="fas fa-angle-down "></i>
+                        </span>
+                    </div>
+
+                    <ul class="lang_list">
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/azerbaijan.png" alt="lang_list_flag">
+                        </li>
+
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/united-states.png" alt="lang_list_flag">
+                        </li>
+
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/russia.png" alt="lang_list_flag">
+                        </li>
+                    </ul>
+
+                </div>
+
+                <a class="open_trading" href="#" target="_self">
+                    Open Trading A / C
+                </a>
+
+                <a class="login" href="./login.html" target="_self">
+                    Login
+                </a>
+
+
+                <div class="mobile_menu_btn">
+                    <button class="btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
+
+    <main role="main" class="w-100">
+        <section class="barChartSection">
+            <div class="center">
+                <div class="barChartSection_top d-flex justify-content-between ">
+
+                    <div class="d-flex">
+                        <div class="single_coin_name">
+                            <div class="coinName d-flex align-items-center ">
+                                BTC/USDT
+                                <span class="increase">10x</span>
+                            </div>
+                            <span class="coin_excerpt">
+                                bitcoin
+                            </span>
+                        </div>
+
+                        <div class="singleCoin_prices d-flex">
+                            <div class="d-flex flex-column ">
+                                <span class="newPrice azalma ">36,641.20</span>
+                                <span class="oldPrice">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.00065 13.3333C10.9462 13.3333 13.334 10.9454 13.334 7.99992C13.334 5.0544 10.9462 2.66658 8.00065 2.66658C5.05513 2.66658 2.66731 5.0544 2.66731 7.99992C2.66731 10.9454 5.05513 13.3333 8.00065 13.3333ZM8.00065 14.6666C11.6826 14.6666 14.6673 11.6819 14.6673 7.99992C14.6673 4.31802 11.6826 1.33325 8.00065 1.33325C4.31875 1.33325 1.33398 4.31802 1.33398 7.99992C1.33398 11.6819 4.31875 14.6666 8.00065 14.6666Z"
+                                            fill="#777E90" />
+                                        <path
+                                            d="M7.33399 4.66667C7.33399 4.29848 7.63247 4 8.00066 4C8.36885 4 8.66732 4.29848 8.66732 4.66667C9.77189 4.66667 10.6673 5.5621 10.6673 6.66667C10.6673 7.03486 10.3688 7.33333 10.0007 7.33333C9.63247 7.33333 9.33399 7.03486 9.33399 6.66667C9.33399 6.29848 9.03551 6 8.66732 6H7.16293C6.88922 6 6.66732 6.22189 6.66732 6.49561C6.66732 6.70894 6.80383 6.89833 7.00621 6.96579L9.41674 7.7693C10.1636 8.01825 10.6673 8.71716 10.6673 9.50439C10.6673 10.5145 9.84848 11.3333 8.83838 11.3333H8.66732C8.66732 11.7015 8.36885 12 8.00066 12C7.63247 12 7.33399 11.7015 7.33399 11.3333C6.22941 11.3333 5.33398 10.4379 5.33398 9.33333C5.33398 8.96514 5.63246 8.66667 6.00065 8.66667C6.36885 8.66667 6.66732 8.96514 6.66732 9.33333C6.66732 9.70152 6.9658 10 7.33399 10H8.83838C9.1121 10 9.33399 9.77811 9.33399 9.50439C9.33399 9.29106 9.19748 9.10167 8.99511 9.03421L6.58457 8.2307C5.83773 7.98176 5.33398 7.28284 5.33398 6.49561C5.33398 5.48551 6.15283 4.66667 7.16293 4.66667H7.33399Z"
+                                            fill="#777E90" />
+                                    </svg>
+
+                                    36,641.20
+                                </span>
+                            </div>
+                            <button>
+                                <span>
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="time_interval">
+                        <ul class="timeIntervalList d-flex   ">
+                            <li class="timeIntervalList_item d-flex flex-column ">
+                                <span class="listItem_timeTab">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.00065 13.3333C10.9462 13.3333 13.334 10.9454 13.334 7.99992C13.334 5.0544 10.9462 2.66658 8.00065 2.66658C5.05513 2.66658 2.66731 5.0544 2.66731 7.99992C2.66731 10.9454 5.05513 13.3333 8.00065 13.3333ZM8.00065 14.6666C11.6826 14.6666 14.6673 11.6819 14.6673 7.99992C14.6673 4.31802 11.6826 1.33325 8.00065 1.33325C4.31875 1.33325 1.33398 4.31802 1.33398 7.99992C1.33398 11.6819 4.31875 14.6666 8.00065 14.6666Z"
+                                            fill="#777E90" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.00065 4C8.36884 4 8.66731 4.29848 8.66731 4.66667V7.72386L10.1387 9.19526C10.3991 9.45561 10.3991 9.87772 10.1387 10.1381C9.87837 10.3984 9.45626 10.3984 9.19591 10.1381L7.52925 8.4714C7.40422 8.34638 7.33398 8.17681 7.33398 8V4.66667C7.33398 4.29848 7.63246 4 8.00065 4Z"
+                                            fill="#777E90" />
+                                    </svg>
+                                    24h change
+                                </span>
+                                <span class="listItem_coinChange">
+                                    520.80 +1.25%
+                                </span>
+                            </li>
+
+                            <li class="timeIntervalList_item d-flex flex-column ">
+                                <span class="listItem_timeTab">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.1572 6.60734C11.4069 6.3368 11.39 5.91502 11.1195 5.66528L8.78619 3.51144C8.53082 3.2757 8.1372 3.2757 7.88182 3.51143L5.54846 5.66528C5.27791 5.91501 5.26104 6.33679 5.51077 6.60734C5.76051 6.87788 6.18228 6.89476 6.45283 6.64502L7.66734 5.52395L7.66734 12.0013C7.66734 12.3695 7.96581 12.668 8.334 12.668C8.70219 12.668 9.00067 12.3695 9.00067 12.0013L9.00067 5.52397L10.2151 6.64502C10.4857 6.89475 10.9074 6.87789 11.1572 6.60734Z"
+                                            fill="#777E90" />
+                                    </svg>
+
+                                    24h high
+                                </span>
+                                <span class="listItem_coinChange">
+                                    520.80 +1.25%
+                                </span>
+                            </li>
+
+                            <li class="timeIntervalList_item d-flex flex-column ">
+                                <span class="listItem_timeTab">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.4892 9.3929C10.7389 9.66344 10.7221 10.0852 10.4515 10.335L8.11823 12.4888C7.86286 12.7245 7.46924 12.7245 7.21386 12.4888L4.8805 10.335C4.60995 10.0852 4.59307 9.66345 4.84281 9.3929C5.09255 9.12236 5.51432 9.10548 5.78487 9.35522L6.99938 10.4763L6.99938 3.99894C6.99938 3.63075 7.29785 3.33228 7.66604 3.33228C8.03423 3.33228 8.33271 3.63075 8.33271 3.99894L8.33271 10.4763L9.54716 9.35522C9.8177 9.10549 10.2395 9.12235 10.4892 9.3929Z"
+                                            fill="#777E90" />
+                                    </svg>
+
+                                    24h low
+                                </span>
+                                <span class="listItem_coinChange">
+                                    520.80 +1.25%
+                                </span>
+                            </li>
+
+                            <li class="timeIntervalList_item d-flex flex-column ">
+                                <span class="listItem_timeTab">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.33268 2C1.70087 2 1.99934 2.29848 1.99934 2.66667V12C1.99934 12.3682 2.29782 12.6667 2.66601 12.6667H14.666C15.0342 12.6667 15.3327 12.9651 15.3327 13.3333C15.3327 13.7015 15.0342 14 14.666 14H2.66601C1.56144 14 0.666016 13.1046 0.666016 12V2.66667C0.666016 2.29848 0.964492 2 1.33268 2Z"
+                                            fill="#777E90" />
+                                        <g clip-path="url(#clip0_0_3092)">
+                                            <path
+                                                d="M12.0007 3.33325C11.6325 3.33325 11.334 3.63173 11.334 3.99992V10.6666C11.334 11.0348 11.6325 11.3333 12.0007 11.3333C12.3688 11.3333 12.6673 11.0348 12.6673 10.6666V3.99992C12.6673 3.63173 12.3688 3.33325 12.0007 3.33325Z"
+                                                fill="#777E90" />
+                                            <path
+                                                d="M6.66666 4.6665C6.29847 4.6665 6 4.96498 6 5.33317V10.6665C6 11.0347 6.29847 11.3332 6.66666 11.3332C7.03485 11.3332 7.33333 11.0347 7.33333 10.6665V5.33317C7.33333 4.96498 7.03485 4.6665 6.66666 4.6665Z"
+                                                fill="#777E90" />
+                                            <path
+                                                d="M4.00065 8.6665C3.63246 8.6665 3.33398 8.96498 3.33398 9.33317V10.6665C3.33398 11.0347 3.63246 11.3332 4.00065 11.3332C4.36884 11.3332 4.66731 11.0347 4.66731 10.6665V9.33317C4.66731 8.96498 4.36884 8.6665 4.00065 8.6665Z"
+                                                fill="#777E90" />
+                                            <path
+                                                d="M8.66797 6.66666C8.66797 6.29847 8.96645 6 9.33464 6C9.70283 6 10.0013 6.29847 10.0013 6.66666V10.6667C10.0013 11.0348 9.70283 11.3333 9.33464 11.3333C8.96645 11.3333 8.66797 11.0348 8.66797 10.6667V6.66666Z"
+                                                fill="#777E90" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_0_3092">
+                                                <rect width="9.33333" height="8" fill="white"
+                                                    transform="translate(3.33398 3.33325)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    24h volume
+                                </span>
+                                <span class="listItem_coinChange">
+                                    520.80 +1.25%
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="singleChartContainer  w-100 ">
+                    <div class="myFirstCssClass w-100 d-flex ">
+
+                        <div class="singleChartContainer_left">
+                            <div class="singleChartContainer_left_filter d-flex justify-content-between  w-100">
+                                <button class="btn filterBtn">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="12" height="2" rx="1" fill="#FF6838" />
+                                        <rect y="4" width="12" height="2" rx="1" fill="#B1B5C3" />
+                                        <rect y="8" width="12" height="2" rx="1" fill="#58BD7D" />
+                                    </svg>
+
+                                </button>
+
+                                <button class="btn filterBtn">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="12" height="2" rx="1" fill="#B1B5C3" />
+                                        <rect y="4" width="12" height="2" rx="1" fill="#B1B5C3" />
+                                        <rect y="8" width="12" height="2" rx="1" fill="#58BD7D" />
+                                    </svg>
+                                </button>
+
+                                <button class="btn filterBtn">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="12" height="2" rx="1" fill="#FF6838" />
+                                        <rect y="4" width="12" height="2" rx="1" fill="#B1B5C3" />
+                                        <rect y="8" width="12" height="2" rx="1" fill="#B1B5C3" />
+                                    </svg>
+                                </button>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary border-0 dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        10
+                                    </button>
+                                    <ul class="dropdown-menu flex-column " aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">5</a></li>
+                                        <li><a class="dropdown-item" href="#">8</a></li>
+                                        <li><a class="dropdown-item" href="#">15</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary border-0 dropdown-toggle" type="button"
+                                        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    </button>
+                                    <ul class="dropdown-menu flex-column " aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="#">smth</a></li>
+                                        <li><a class="dropdown-item" href="#">smth</a></li>
+                                        <li><a class="dropdown-item" href="#">smth</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="singleChartContainer_left_table w-100 ">
+                                <table class="w-100 mt-2">
+                                    <thead>
+                                        <tr>
+                                            <th class="p-0 text-star ">price <br> (USDT)</th>
+                                            <th class="p-0 text-center ">amounts <br> (BTC)</th>
+                                            <th class="p-0 text-end ">total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="px-0 text-start red_color ">36920.12</td>
+                                            <td class="px-0 text-center ">0.758965</td>
+                                            <td class="px-0 text-end ">28,020.98</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="px-0 text-start red_color ">36920.12</td>
+                                            <td class="px-0 text-center ">0.758965</td>
+                                            <td class="px-0 text-end ">28,020.98</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="px-0 text-start red_color ">36920.12</td>
+                                            <td class="px-0 text-center ">0.758965</td>
+                                            <td class="px-0 text-end ">28,020.98</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="px-0 text-start red_color ">36920.12</td>
+                                            <td class="px-0 text-center ">0.758965</td>
+                                            <td class="px-0 text-end ">28,020.98</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="singleChartContainer_right">
+
+                            <div class="singleChartContainer_right_top w-100">
+                                <ul class="singleChartContainer_right_top_list p-0 d-flex ">
+                                    <li class="singleChartContainer_right_top_list_item">
+                                        <button> time </button>
+                                    </li>
+
+                                    <li class="singleChartContainer_right_top_list_item">
+                                        <button> 1h </button>
+                                    </li>
+
+                                    <li class="singleChartContainer_right_top_list_item">
+                                        <button class="my_active"> 1h </button>
+                                    </li>
+
+                                    <li class="singleChartContainer_right_top_list_item">
+                                        <button> 4h </button>
+                                    </li>
+
+                                    <li class="singleChartContainer_right_top_list_item">
+                                        <button> 1d </button>
+                                    </li>
+
+                                    <li class="singleChartContainer_right_top_list_item">
+                                        <button> 1w </button>
+                                    </li>
+
+                                    <li class="singleChartContainer_right_top_list_item">
+                                        <button> 1m </button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div id="chartdiv"></div>
+
+                            <div class="">
+                                <div class="singleChartContainer_top d-flex justify-content-between ">
+                                    <ul class="singleChartContainer_top_menu d-flex ">
+                                        <li>
+                                            <button class="my_active">
+                                                trade
+                                            </button>
+                                        </li>
+
+                                        <li>
+                                            <button>
+                                                market
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="singleChartContainer_top_link  d-flex">
+                                        <span>Crypto trading tutorial</span>
+                                        <a href="">Learn now <span><i class="fas fa-angle-right"></i></span> </a>
+                                    </div>
+                                </div>
+
+                                <div class="singleChartContainer_form  d-flex justify-content-between w-100">
+                                    <div class="left_form  ">
+                                        <div class="left_form_title d-flex justify-content-between align-items-center">
+                                            <h3>buy BTC</h3>
+                                            <span>
+                                                <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_0_3368)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M16.1109 2.6199H4.07086C3.12093 2.6199 2.35086 3.38998 2.35086 4.33991V12.9399C2.35086 13.8898 3.12093 14.6599 4.07086 14.6599H16.1109C17.0608 14.6599 17.8308 13.8898 17.8308 12.9399V4.33991C17.8308 3.38998 17.0608 2.6199 16.1109 2.6199ZM4.07086 0.899902C2.171 0.899902 0.630859 2.44005 0.630859 4.33991V12.9399C0.630859 14.8398 2.171 16.3799 4.07086 16.3799H16.1109C18.0108 16.3799 19.5509 14.8398 19.5509 12.9399V4.33991C19.5509 2.44005 18.0108 0.899902 16.1109 0.899902H4.07086Z"
+                                                            fill="#23262F" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M10.9512 8.63984C10.9512 6.26501 12.8763 4.33984 15.2512 4.33984H18.6912C19.1661 4.33984 19.5512 4.72488 19.5512 5.19984C19.5512 5.67481 19.1661 6.05984 18.6912 6.05984H15.2512C13.8263 6.05984 12.6712 7.21494 12.6712 8.63984C12.6712 10.0647 13.8263 11.2198 15.2512 11.2198H18.6912C19.1661 11.2198 19.5512 11.6049 19.5512 12.0798C19.5512 12.5548 19.1661 12.9398 18.6912 12.9398H15.2512C12.8763 12.9398 10.9512 11.0147 10.9512 8.63984Z"
+                                                            fill="#23262F" />
+                                                        <path
+                                                            d="M16.1106 8.63979C16.1106 9.11476 15.7256 9.49979 15.2506 9.49979C14.7757 9.49979 14.3906 9.11476 14.3906 8.63979C14.3906 8.16482 14.7757 7.77979 15.2506 7.77979C15.7256 7.77979 16.1106 8.16482 16.1106 8.63979Z"
+                                                            fill="#23262F" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_0_3368">
+                                                            <rect width="18.92" height="15.48" fill="white"
+                                                                transform="translate(0.630859 0.899902)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+
+                                                <span class="singleCoinPrice">
+
+                                                    10,098.36 USD
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <form class="leftFormInputContainer" action="#" method="post"
+                                            enctype="multipart/form-data">
+                                            <div class=" w-100 d-flex justify-content-between  align-items-center">
+                                                <input type="number" placeholder="Price">
+                                                <span>
+                                                    36,641.20
+                                                    <span class="moneyType">
+                                                        USDT
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="w-100 d-flex justify-content-between  align-items-center">
+                                                <input type="number" placeholder="Amount">
+                                                <span class="moneyType">
+                                                    BTC
+                                                </span>
+                                            </div>
+                                            <div class="w-100 d-flex justify-content-between  align-items-center">
+                                                <input type="number" placeholder="Take profit">
+                                                <span>
+                                                    36,641.20
+                                                    <span class="moneyType">
+                                                        when Price
+                                                    </span>
+                                                </span>
+                                            </div>
+
+                                            <div class="w-100 d-flex justify-content-between  align-items-center">
+                                                <input type="number" placeholder="Total">
+                                                <span class="moneyType">
+                                                    BTC
+                                                </span>
+                                            </div>
+
+                                            <button class="w-100" type="submit">
+                                                buy BTC
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                    <div class="right_form  ">
+                                        <div class="left_form_title d-flex justify-content-between align-items-center">
+                                            <h3>sell BTC</h3>
+                                            <span>
+                                                <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_0_3368)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M16.1109 2.6199H4.07086C3.12093 2.6199 2.35086 3.38998 2.35086 4.33991V12.9399C2.35086 13.8898 3.12093 14.6599 4.07086 14.6599H16.1109C17.0608 14.6599 17.8308 13.8898 17.8308 12.9399V4.33991C17.8308 3.38998 17.0608 2.6199 16.1109 2.6199ZM4.07086 0.899902C2.171 0.899902 0.630859 2.44005 0.630859 4.33991V12.9399C0.630859 14.8398 2.171 16.3799 4.07086 16.3799H16.1109C18.0108 16.3799 19.5509 14.8398 19.5509 12.9399V4.33991C19.5509 2.44005 18.0108 0.899902 16.1109 0.899902H4.07086Z"
+                                                            fill="#23262F" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M10.9512 8.63984C10.9512 6.26501 12.8763 4.33984 15.2512 4.33984H18.6912C19.1661 4.33984 19.5512 4.72488 19.5512 5.19984C19.5512 5.67481 19.1661 6.05984 18.6912 6.05984H15.2512C13.8263 6.05984 12.6712 7.21494 12.6712 8.63984C12.6712 10.0647 13.8263 11.2198 15.2512 11.2198H18.6912C19.1661 11.2198 19.5512 11.6049 19.5512 12.0798C19.5512 12.5548 19.1661 12.9398 18.6912 12.9398H15.2512C12.8763 12.9398 10.9512 11.0147 10.9512 8.63984Z"
+                                                            fill="#23262F" />
+                                                        <path
+                                                            d="M16.1106 8.63979C16.1106 9.11476 15.7256 9.49979 15.2506 9.49979C14.7757 9.49979 14.3906 9.11476 14.3906 8.63979C14.3906 8.16482 14.7757 7.77979 15.2506 7.77979C15.7256 7.77979 16.1106 8.16482 16.1106 8.63979Z"
+                                                            fill="#23262F" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_0_3368">
+                                                            <rect width="18.92" height="15.48" fill="white"
+                                                                transform="translate(0.630859 0.899902)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+
+                                                <span class="singleCoinPrice">
+
+                                                    10,098.36 USD
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <form class="rightFormInputContainer" action="#" method="post"
+                                            enctype="multipart/form-data">
+                                            <div class=" w-100 d-flex justify-content-between  align-items-center">
+                                                <input type="number" placeholder="Price">
+                                                <span>
+                                                    36,641.20
+                                                    <span class="moneyType">
+                                                        USDT
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="w-100 d-flex justify-content-between  align-items-center">
+                                                <input type="number" placeholder="Amount">
+                                                <span class="moneyType">
+                                                    BTC
+                                                </span>
+                                            </div>
+                                            <div class="w-100 d-flex justify-content-between  align-items-center">
+                                                <input type="number" placeholder="Take profit">
+                                                <span>
+                                                    36,641.20
+                                                    <span class="moneyType">
+                                                        when Price
+                                                    </span>
+                                                </span>
+                                            </div>
+
+                                            <div class="w-100 d-flex justify-content-between  align-items-center">
+                                                <input type="number" placeholder="Total">
+                                                <span class="moneyType">
+                                                    BTC
+                                                </span>
+                                            </div>
+
+                                            <button class="w-100" type="submit">
+                                                sell BTC
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="tableContainerBlock  w-100">
+                                <div class="tableContainer_Menu w-100">
+                                    <ul class="tableContainer_Menu_list d-flex">
+                                        <li class="tableContainer_Menu_list_item">
+                                            <button class="my_active">
+                                                market trades
+                                            </button>
+                                        </li>
+
+                                        <li class="tableContainer_Menu_list_item">
+                                            <button>
+                                                my trades
+                                            </button>
+                                        </li>
+
+                                        <li class="tableContainer_Menu_list_item">
+                                            <button>
+                                                open orders
+                                            </button>
+                                        </li>
+
+                                        <li class="tableContainer_Menu_list_item">
+                                            <button>
+                                                favorites
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tableContainerBlock_tableContainer w-100">
+                                        <table class="tableContainerBlock_table">
+                                            <thead>
+                                                <tr>
+                                                    <th> time <svg class="mx-1 mb-1" width="6" height="10"
+                                                            viewBox="0 0 6 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_0_3454)">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M0.195262 3.80441C0.455612 4.06476 0.877722 4.06476 1.13807 3.80441L3 1.94249L4.86193 3.80441C5.12228 4.06476 5.54439 4.06476 5.80474 3.80441C6.06509 3.54407 6.06509 3.12196 5.80474 2.86161L3.4714 0.52827C3.21106 0.26792 2.78895 0.26792 2.5286 0.52827L0.195262 2.86161C-0.0650872 3.12196 -0.0650872 3.54407 0.195262 3.80441Z"
+                                                                    fill="#777E90" />
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M0.195262 6.19595C0.455612 5.9356 0.877722 5.9356 1.13807 6.19595L3 8.05788L4.86193 6.19595C5.12228 5.9356 5.54439 5.9356 5.80474 6.19595C6.06509 6.45629 6.06509 6.87841 5.80474 7.13876L3.4714 9.4721C3.21106 9.73245 2.78895 9.73245 2.5286 9.4721L0.195262 7.13876C-0.0650872 6.87841 -0.0650872 6.45629 0.195262 6.19595Z"
+                                                                    fill="#777E90" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_0_3454">
+                                                                    <rect width="6.00065" height="9.33366" fill="white"
+                                                                        transform="translate(0 0.333374)" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </th>
+                                                    <th> price(USDT)
+                                                        <svg class="mx-1 mb-1" width="6" height="10" viewBox="0 0 6 10"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_0_3454)">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M0.195262 3.80441C0.455612 4.06476 0.877722 4.06476 1.13807 3.80441L3 1.94249L4.86193 3.80441C5.12228 4.06476 5.54439 4.06476 5.80474 3.80441C6.06509 3.54407 6.06509 3.12196 5.80474 2.86161L3.4714 0.52827C3.21106 0.26792 2.78895 0.26792 2.5286 0.52827L0.195262 2.86161C-0.0650872 3.12196 -0.0650872 3.54407 0.195262 3.80441Z"
+                                                                    fill="#777E90" />
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M0.195262 6.19595C0.455612 5.9356 0.877722 5.9356 1.13807 6.19595L3 8.05788L4.86193 6.19595C5.12228 5.9356 5.54439 5.9356 5.80474 6.19595C6.06509 6.45629 6.06509 6.87841 5.80474 7.13876L3.4714 9.4721C3.21106 9.73245 2.78895 9.73245 2.5286 9.4721L0.195262 7.13876C-0.0650872 6.87841 -0.0650872 6.45629 0.195262 6.19595Z"
+                                                                    fill="#777E90" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_0_3454">
+                                                                    <rect width="6.00065" height="9.33366" fill="white"
+                                                                        transform="translate(0 0.333374)" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </th>
+                                                    <th> amount (BTC)
+                                                        <svg class="mx-1 mb-1" width="6" height="10" viewBox="0 0 6 10"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_0_3454)">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M0.195262 3.80441C0.455612 4.06476 0.877722 4.06476 1.13807 3.80441L3 1.94249L4.86193 3.80441C5.12228 4.06476 5.54439 4.06476 5.80474 3.80441C6.06509 3.54407 6.06509 3.12196 5.80474 2.86161L3.4714 0.52827C3.21106 0.26792 2.78895 0.26792 2.5286 0.52827L0.195262 2.86161C-0.0650872 3.12196 -0.0650872 3.54407 0.195262 3.80441Z"
+                                                                    fill="#777E90" />
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M0.195262 6.19595C0.455612 5.9356 0.877722 5.9356 1.13807 6.19595L3 8.05788L4.86193 6.19595C5.12228 5.9356 5.54439 5.9356 5.80474 6.19595C6.06509 6.45629 6.06509 6.87841 5.80474 7.13876L3.4714 9.4721C3.21106 9.73245 2.78895 9.73245 2.5286 9.4721L0.195262 7.13876C-0.0650872 6.87841 -0.0650872 6.45629 0.195262 6.19595Z"
+                                                                    fill="#777E90" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_0_3454">
+                                                                    <rect width="6.00065" height="9.33366" fill="white"
+                                                                        transform="translate(0 0.333374)" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </th>
+                                                    <th> total (USDT)
+                                                        <svg class="mx-1 mb-1" width="6" height="10" viewBox="0 0 6 10"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_0_3454)">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M0.195262 3.80441C0.455612 4.06476 0.877722 4.06476 1.13807 3.80441L3 1.94249L4.86193 3.80441C5.12228 4.06476 5.54439 4.06476 5.80474 3.80441C6.06509 3.54407 6.06509 3.12196 5.80474 2.86161L3.4714 0.52827C3.21106 0.26792 2.78895 0.26792 2.5286 0.52827L0.195262 2.86161C-0.0650872 3.12196 -0.0650872 3.54407 0.195262 3.80441Z"
+                                                                    fill="#777E90" />
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M0.195262 6.19595C0.455612 5.9356 0.877722 5.9356 1.13807 6.19595L3 8.05788L4.86193 6.19595C5.12228 5.9356 5.54439 5.9356 5.80474 6.19595C6.06509 6.45629 6.06509 6.87841 5.80474 7.13876L3.4714 9.4721C3.21106 9.73245 2.78895 9.73245 2.5286 9.4721L0.195262 7.13876C-0.0650872 6.87841 -0.0650872 6.45629 0.195262 6.19595Z"
+                                                                    fill="#777E90" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_0_3454">
+                                                                    <rect width="6.00065" height="9.33366" fill="white"
+                                                                        transform="translate(0 0.333374)" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="time_td text-start">18:05:40</td>
+                                                    <td class="price_td text-start">36,641.209735578</td>
+                                                    <td class="amount_td  text-start">0.245455484546</td>
+                                                    <td class="amount_td  text-start">36,641.209735578</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="time_td text-start">18:05:40</td>
+                                                    <td class="price_td text-start">36,641.209735578</td>
+                                                    <td class="amount_td  text-start">0.245455484546</td>
+                                                    <td class="amount_td  text-start">36,641.209735578</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="time_td text-start">18:05:40</td>
+                                                    <td class="price_td text-start">36,641.209735578</td>
+                                                    <td class="amount_td  text-start">0.245455484546</td>
+                                                    <td class="amount_td  text-start">36,641.209735578</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="time_td text-start">18:05:40</td>
+                                                    <td class="price_td text-start">36,641.209735578</td>
+                                                    <td class="amount_td  text-start">0.245455484546</td>
+                                                    <td class="amount_td  text-start">36,641.209735578</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-100">
+        <div class="footer_in w-100">
+            <div class="center">
+                <div class="footer_in_basic w-100  d-flex  ">
+
+                    <div class="footer_logo">
+                        <a href="javascript:void(0)">
+                            <img src="./assets/images/foooter_logo.png" alt="footer_logo">
+                        </a>
+                    </div>
+
+                    <div class="operations">
+                        <ul class="operation_list d-flex flex-column">
+                            <li class="operation_item">
+                                <a href="javascript:void(0)">Exchange</a>
+                            </li>
+                            <li class="operation_item">
+                                <a href="javascript:void(0)">Buy crypto</a>
+                            </li>
+                            <li class="operation_item">
+                                <a href="javascript:void(0)">Market</a>
+                            </li>
+                            <li class="operation_item">
+                                <a href="javascript:void(0)">Learn crypto</a>
+                            </li>
+                            <li class="operation_item">
+                                <a href="javascript:void(0)">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contacts">
+                        <address class="w-100">
+                            <h4 class="contact_title">contact</h4>
+                            <ul class="adres_list d-flex flex-column">
+                                <li class="adres_item">
+                                    <a href="javascript:void(0)">
+                                        43252 Borer Mountains
+                                    </a>
+                                </li>
+                                <li class="adres_item">
+                                    <a href="javascript:void(0)">
+                                        Zackerychester Bahamas
+                                    </a>
+                                </li>
+                                <li class="adres_item">
+                                    <a href="javascript:void(0)">
+                                        Bahamas
+                                    </a>
+                                </li>
+                                <li class="adres_item">
+                                    <a href="tel: 732-528-4945">
+                                        732-528-4945
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+
+                    <div class="newsletter">
+                        <h4 class="newsletter_title">newsletter</h4>
+                        <p class="newsletter_excerpt">
+                            Subscribe our newsletter to get more free design course and resource.
+                        </p>
+                        <div class="email_container">
+                            <input type="email" placeholder="Enter your email">
+                            <button class="send_mail_btn" type="button">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom w-100 ">
+            <div class="center">
+                <div class="footer_bottom_in w-100 d-flex justify-content-between ">
+                    <div class="company_rights">
+                        <p>
+                            © 2021 - All Rights Reserved . Designed by <a href="javascript:void(0)">HajMa Group of
+                                Companies</a>.
+                        </p>
+                    </div>
+                    <div class="sosial_networks">
+                        <ul class="networks_list">
+                            <li class="list_item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/css/logo/facebook_icon.svg" alt="networks">
+                                </a>
+                            </li>
+
+                            <li class="list_item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/css/logo/twitter_icon.svg" alt="networks">
+                                </a>
+                            </li>
+
+                            <li class="list_item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/css/logo/istagram_icon.svg" alt="networks">
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile_menu">
+        <div class="mobile_menu_inner p-1 ">
+            <ul class="mobile_menu_list d-flex flex-column">
+
+                <li class="mobile_menu_list_item">
+                    <a href="javascript:void(0)">
+                        exchange
+                    </a>
+                </li>
+
+                <li class="mobile_menu_list_item">
+
+                    <div class="d-flex w-100 justify-content-between ">
+                        <a class="mobile_crypto_buy w-100 " data-bs-toggle="collapse" href="#collapseExample"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            buy crypto
+
+                        </a>
+                        <span id="down_arrow"> <i class="fas fa-angle-down "></i></span>
+                    </div>
+
+                    <div class="my_collapse_mobile collapse" id="collapseExample">
+                        <div>
+                            <ul class="d-flex flex-column p-0 ">
+                                <li class="p-2">
+                                    <a href="javascript:void(0)"> Smth</a>
+                                </li>
+
+                                <li class="p-2">
+                                    <a href="javascript:void(0)"> Smth</a>
+                                </li>
+
+                                <li class="p-2">
+                                    <a href="javascript:void(0)"> Smth</a>
+                                </li>
+
+                                <li class="p-2">
+                                    <a href="javascript:void(0)"> Smth</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mobile_menu_list_item">
+                    <a href="javascript:void(0)">
+                        marget
+                    </a>
+                </li>
+
+                <li class="mobile_menu_list_item">
+                    <a href="javascript:void(0)">
+                        discover
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="mobile_menu_buttons_container  flex-column ">
+                <a class="mobile_trade_btn mb-2 " href="#" target="_self">
+                    trade
+                </a>
+
+                <a class="mobile_open_trading  mb-2 " href="#" target="_self">
+                    Open Trading A / C
+                </a>
+
+                <a class="mobil_login  mb-2 " href="./login.html" target="_self">
+                    Login
+                </a>
+
+                <div class="mobile_lang_menu d-flex justify-content-between align-items-center ">
+
+                    <div id="mobile_lang" class="lang d-flex justify-content-between align-items-center ">
+                        <p>
+                            <img src="./assets/css/logo/united-states.png" alt="">
+                        </p>
+                        <span>
+                            <i class="fas fa-angle-down "></i>
+                        </span>
+                    </div>
+
+                    <ul id="mobile_lang_list" class=" lang_list">
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/azerbaijan.png" alt="lang_list_flag">
+                        </li>
+
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/united-states.png" alt="lang_list_flag">
+                        </li>
+
+                        <li class="lang_list_item">
+                            <img src="./assets/css/logo/russia.png" alt="lang_list_flag">
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- jQuery  plugin  -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <!--  javascript cods -->
+
+    <script src="./assets/js/header.js"></script>
+
+
+
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script>
+        var chart = AmCharts.makeChart("chartdiv", {
+            "type": "serial",
+            "theme": "light",
+            "dataDateFormat": "YYYY-MM-DD",
+            "valueAxes": [{
+                "position": "left"
+            }],
+            "graphs": [{
+                "id": "gwwwww1",
+                "balloonText": "Open:<b>[[open]]</b><br>Low:<b>[[low]]</b><br>High:<b>[[high]]</b><br>Close:<b>[[close]]</b><br>",
+                "closeField": "close",
+                "fillColors": "#00C076",
+                "highField": "high",
+                "lineColor": "#00C076",
+                "lineAlpha": 1,
+                "lowField": "low",
+                "fillAlphas": 0.9,
+                "negativeFillColors": "#FF6838",
+                "negativeLineColor": "#FF6838",
+                "openField": "open",
+                "title": "Price:",
+                "type": "candlestick",
+                "valueField": "close"
+            }],
+            "chartScrollbar": {
+                "graph": "g1",
+                "graphType": "line",
+                "scrollbarHeight": 30
+            },
+            "chartCursor": {
+                "valueLineEnabled": true,
+                "valueLineBalloonEnabled": true
+            },
+            "categoryField": "date",
+            "categoryAxis": {
+                "parseDates": true
+            },
+            "dataProvider": [{
+                "date": "2011-08-01",
+                "open": "136.65",
+                "high": "136.96",
+                "low": "134.15",
+                "close": "136.49"
+            }, {
+                "date": "2011-08-02",
+                "open": "135.26",
+                "high": "135.95",
+                "low": "131.50",
+                "close": "131.85"
+            }, {
+                "date": "2011-08-05",
+                "open": "132.90",
+                "high": "135.27",
+                "low": "128.30",
+                "close": "135.25"
+            }, {
+                "date": "2011-08-06",
+                "open": "134.94",
+                "high": "137.24",
+                "low": "132.63",
+                "close": "135.03"
+            }, {
+                "date": "2011-08-07",
+                "open": "136.76",
+                "high": "136.86",
+                "low": "132.00",
+                "close": "134.01"
+            }, {
+                "date": "2011-08-08",
+                "open": "131.11",
+                "high": "133.00",
+                "low": "125.09",
+                "close": "126.39"
+            }, {
+                "date": "2011-08-09",
+                "open": "123.12",
+                "high": "127.75",
+                "low": "120.30",
+                "close": "125.00"
+            }, {
+                "date": "2011-08-12",
+                "open": "128.32",
+                "high": "129.35",
+                "low": "126.50",
+                "close": "127.79"
+            }, {
+                "date": "2011-08-13",
+                "open": "128.29",
+                "high": "128.30",
+                "low": "123.71",
+                "close": "124.03"
+            }, {
+                "date": "2011-08-14",
+                "open": "122.74",
+                "high": "124.86",
+                "low": "119.65",
+                "close": "119.90"
+            }, {
+                "date": "2011-08-15",
+                "open": "117.01",
+                "high": "118.50",
+                "low": "111.62",
+                "close": "117.05"
+            }, {
+                "date": "2011-08-16",
+                "open": "122.01",
+                "high": "123.50",
+                "low": "119.82",
+                "close": "122.06"
+            }, {
+                "date": "2011-08-19",
+                "open": "123.96",
+                "high": "124.50",
+                "low": "120.50",
+                "close": "122.22"
+            }, {
+                "date": "2011-08-20",
+                "open": "122.21",
+                "high": "128.96",
+                "low": "121.00",
+                "close": "127.57"
+            }, {
+                "date": "2011-08-21",
+                "open": "131.22",
+                "high": "132.75",
+                "low": "130.33",
+                "close": "132.51"
+            }, {
+                "date": "2011-08-22",
+                "open": "133.09",
+                "high": "133.34",
+                "low": "129.76",
+                "close": "131.07"
+            }, {
+                "date": "2011-08-23",
+                "open": "130.53",
+                "high": "135.37",
+                "low": "129.81",
+                "close": "135.30"
+            }, {
+                "date": "2011-08-26",
+                "open": "133.39",
+                "high": "134.66",
+                "low": "132.10",
+                "close": "132.25"
+            }, {
+                "date": "2011-08-27",
+                "open": "130.99",
+                "high": "132.41",
+                "low": "126.63",
+                "close": "126.82"
+            }, {
+                "date": "2011-08-28",
+                "open": "129.88",
+                "high": "134.18",
+                "low": "129.54",
+                "close": "134.08"
+            }, {
+                "date": "2011-08-29",
+                "open": "132.67",
+                "high": "138.25",
+                "low": "132.30",
+                "close": "136.25"
+            }, {
+                "date": "2011-08-30",
+                "open": "139.49",
+                "high": "139.65",
+                "low": "137.41",
+                "close": "138.48"
+            }, {
+                "date": "2011-09-03",
+                "open": "139.94",
+                "high": "145.73",
+                "low": "139.84",
+                "close": "144.16"
+            }, {
+                "date": "2011-09-04",
+                "open": "144.97",
+                "high": "145.84",
+                "low": "136.10",
+                "close": "136.76"
+            }, {
+                "date": "2011-09-05",
+                "open": "135.56",
+                "high": "137.57",
+                "low": "132.71",
+                "close": "135.01"
+            }, {
+                "date": "2011-09-06",
+                "open": "132.01",
+                "high": "132.30",
+                "low": "130.00",
+                "close": "131.77"
+            }, {
+                "date": "2011-09-09",
+                "open": "136.99",
+                "high": "138.04",
+                "low": "133.95",
+                "close": "136.71"
+            }, {
+                "date": "2011-09-10",
+                "open": "137.90",
+                "high": "138.30",
+                "low": "133.75",
+                "close": "135.49"
+            }, {
+                "date": "2011-09-11",
+                "open": "135.99",
+                "high": "139.40",
+                "low": "135.75",
+                "close": "136.85"
+            }, {
+                "date": "2011-09-12",
+                "open": "138.83",
+                "high": "139.00",
+                "low": "136.65",
+                "close": "137.20"
+            }, {
+                "date": "2011-09-13",
+                "open": "136.57",
+                "high": "138.98",
+                "low": "136.20",
+                "close": "138.81"
+            }, {
+                "date": "2011-09-16",
+                "open": "138.99",
+                "high": "140.59",
+                "low": "137.60",
+                "close": "138.41"
+            }, {
+                "date": "2011-09-17",
+                "open": "139.06",
+                "high": "142.85",
+                "low": "137.83",
+                "close": "140.92"
+            }, {
+                "date": "2011-09-18",
+                "open": "143.02",
+                "high": "143.16",
+                "low": "139.40",
+                "close": "140.77"
+            }, {
+                "date": "2011-09-19",
+                "open": "140.15",
+                "high": "141.79",
+                "low": "139.32",
+                "close": "140.31"
+            }, {
+                "date": "2011-09-20",
+                "open": "141.14",
+                "high": "144.65",
+                "low": "140.31",
+                "close": "144.15"
+            }, {
+                "date": "2011-09-23",
+                "open": "146.73",
+                "high": "149.85",
+                "low": "146.65",
+                "close": "148.28"
+            }, {
+                "date": "2011-09-24",
+                "open": "146.84",
+                "high": "153.22",
+                "low": "146.82",
+                "close": "153.18"
+            }, {
+                "date": "2011-09-25",
+                "open": "154.47",
+                "high": "155.00",
+                "low": "151.25",
+                "close": "152.77"
+            }, {
+                "date": "2011-09-26",
+                "open": "153.77",
+                "high": "154.52",
+                "low": "152.32",
+                "close": "154.50"
+            }, {
+                "date": "2011-09-27",
+                "open": "153.44",
+                "high": "154.60",
+                "low": "152.75",
+                "close": "153.47"
+            }, {
+                "date": "2011-09-30",
+                "open": "154.63",
+                "high": "157.41",
+                "low": "152.93",
+                "close": "156.34"
+            }, {
+                "date": "2011-10-01",
+                "open": "156.55",
+                "high": "158.59",
+                "low": "155.89",
+                "close": "158.45"
+            }, {
+                "date": "2011-10-02",
+                "open": "157.78",
+                "high": "159.18",
+                "low": "157.01",
+                "close": "157.92"
+            }, {
+                "date": "2011-10-03",
+                "open": "158.00",
+                "high": "158.08",
+                "low": "153.50",
+                "close": "156.24"
+            }, {
+                "date": "2011-10-04",
+                "open": "158.37",
+                "high": "161.58",
+                "low": "157.70",
+                "close": "161.45"
+            }, {
+                "date": "2011-10-07",
+                "open": "163.49",
+                "high": "167.91",
+                "low": "162.97",
+                "close": "167.91"
+            }, {
+                "date": "2011-10-08",
+                "open": "170.20",
+                "high": "171.11",
+                "low": "166.68",
+                "close": "167.86"
+            }, {
+                "date": "2011-10-09",
+                "open": "167.55",
+                "high": "167.88",
+                "low": "165.60",
+                "close": "166.79"
+            }, {
+                "date": "2011-10-10",
+                "open": "169.49",
+                "high": "171.88",
+                "low": "153.21",
+                "close": "162.23"
+            }, {
+                "date": "2011-10-11",
+                "open": "163.01",
+                "high": "167.28",
+                "low": "161.80",
+                "close": "167.25"
+            }, {
+                "date": "2011-10-14",
+                "open": "167.98",
+                "high": "169.57",
+                "low": "163.50",
+                "close": "166.98"
+            }, {
+                "date": "2011-10-15",
+                "open": "165.54",
+                "high": "170.18",
+                "low": "165.15",
+                "close": "169.58"
+            }, {
+                "date": "2011-10-16",
+                "open": "172.69",
+                "high": "173.04",
+                "low": "169.18",
+                "close": "172.75"
+            }, {
+                "date": "2011-10-17",
+                "open": "171.50",
+                "high": "174.19",
+                "low": "171.05",
+                "close": "173.50"
+            }, {
+                "date": "2011-10-18",
+                "open": "174.24",
+                "high": "174.63",
+                "low": "170.00",
+                "close": "170.42"
+            }, {
+                "date": "2011-10-21",
+                "open": "170.35",
+                "high": "174.90",
+                "low": "169.96",
+                "close": "174.36"
+            }, {
+                "date": "2011-10-22",
+                "open": "188.56",
+                "high": "188.60",
+                "low": "182.76",
+                "close": "186.16"
+            }, {
+                "date": "2011-10-23",
+                "open": "185.81",
+                "high": "187.21",
+                "low": "179.24",
+                "close": "185.93"
+            }, {
+                "date": "2011-10-24",
+                "open": "184.87",
+                "high": "185.90",
+                "low": "181.66",
+                "close": "182.78"
+            }, {
+                "date": "2011-10-25",
+                "open": "185.29",
+                "high": "185.37",
+                "low": "182.88",
+                "close": "184.70"
+            }, {
+                "date": "2011-10-28",
+                "open": "185.45",
+                "high": "186.59",
+                "low": "184.70",
+                "close": "185.09"
+            }, {
+                "date": "2011-10-29",
+                "open": "186.18",
+                "high": "189.37",
+                "low": "184.73",
+                "close": "187.00"
+            }, {
+                "date": "2011-10-30",
+                "open": "187.63",
+                "high": "190.12",
+                "low": "184.95",
+                "close": "189.95"
+            }, {
+                "date": "2011-10-31",
+                "open": "188.60",
+                "high": "190.10",
+                "low": "180.00",
+                "close": "187.44"
+            }, {
+                "date": "2011-11-01",
+                "open": "189.21",
+                "high": "189.44",
+                "low": "183.49",
+                "close": "187.87"
+            }, {
+                "date": "2011-11-04",
+                "open": "185.29",
+                "high": "188.96",
+                "low": "184.24",
+                "close": "186.18"
+            }, {
+                "date": "2011-11-05",
+                "open": "187.05",
+                "high": "192.00",
+                "low": "185.27",
+                "close": "191.79"
+            }, {
+                "date": "2011-11-06",
+                "open": "190.61",
+                "high": "192.68",
+                "low": "186.13",
+                "close": "186.30"
+            }, {
+                "date": "2011-11-07",
+                "open": "186.67",
+                "high": "186.90",
+                "low": "167.77",
+                "close": "175.47"
+            }, {
+                "date": "2011-11-08",
+                "open": "171.15",
+                "high": "175.12",
+                "low": "165.21",
+                "close": "165.37"
+            }, {
+                "date": "2011-11-11",
+                "open": "165.28",
+                "high": "167.70",
+                "low": "150.63",
+                "close": "153.76"
+            }, {
+                "date": "2011-11-12",
+                "open": "160.85",
+                "high": "170.98",
+                "low": "153.76",
+                "close": "169.96"
+            }, {
+                "date": "2011-11-13",
+                "open": "177.16",
+                "high": "177.57",
+                "low": "163.74",
+                "close": "166.11"
+            }, {
+                "date": "2011-11-14",
+                "open": "166.39",
+                "high": "169.59",
+                "low": "160.30",
+                "close": "164.30"
+            }, {
+                "date": "2011-11-15",
+                "open": "165.30",
+                "high": "167.02",
+                "low": "159.33",
+                "close": "166.39"
+            }, {
+                "date": "2011-11-18",
+                "open": "166.10",
+                "high": "168.20",
+                "low": "162.10",
+                "close": "163.95"
+            }, {
+                "date": "2011-11-19",
+                "open": "165.67",
+                "high": "171.79",
+                "low": "163.53",
+                "close": "168.85"
+            }, {
+                "date": "2011-11-20",
+                "open": "165.84",
+                "high": "172.35",
+                "low": "164.67",
+                "close": "168.46"
+            }, {
+                "date": "2011-11-22",
+                "open": "172.00",
+                "high": "172.05",
+                "low": "169.75",
+                "close": "171.54"
+            }, {
+                "date": "2011-11-25",
+                "open": "173.59",
+                "high": "177.27",
+                "low": "172.35",
+                "close": "172.54"
+            }, {
+                "date": "2011-11-26",
+                "open": "175.22",
+                "high": "175.79",
+                "low": "170.01",
+                "close": "174.81"
+            }, {
+                "date": "2011-11-27",
+                "open": "176.82",
+                "high": "180.60",
+                "low": "175.35",
+                "close": "180.22"
+            }, {
+                "date": "2011-11-28",
+                "open": "179.43",
+                "high": "185.17",
+                "low": "179.15",
+                "close": "184.29"
+            }, {
+                "date": "2011-11-29",
+                "open": "187.34",
+                "high": "187.70",
+                "low": "179.70",
+                "close": "182.22"
+            }, {
+                "date": "2011-12-02",
+                "open": "181.86",
+                "high": "184.14",
+                "low": "177.70",
+                "close": "178.86"
+            }, {
+                "date": "2011-12-03",
+                "open": "177.15",
+                "high": "180.90",
+                "low": "176.99",
+                "close": "179.81"
+            }, {
+                "date": "2011-12-04",
+                "open": "182.89",
+                "high": "186.00",
+                "low": "182.41",
+                "close": "185.50"
+            }, {
+                "date": "2011-12-05",
+                "open": "186.19",
+                "high": "190.10",
+                "low": "186.12",
+                "close": "189.95"
+            }, {
+                "date": "2011-12-06",
+                "open": "190.54",
+                "high": "194.99",
+                "low": "188.04",
+                "close": "194.30"
+            }, {
+                "date": "2011-12-09",
+                "open": "193.59",
+                "high": "195.66",
+                "low": "192.69",
+                "close": "194.21"
+            }, {
+                "date": "2011-12-10",
+                "open": "194.75",
+                "high": "196.83",
+                "low": "187.39",
+                "close": "188.54"
+            }, {
+                "date": "2011-12-11",
+                "open": "193.44",
+                "high": "194.48",
+                "low": "185.76",
+                "close": "190.86"
+            }, {
+                "date": "2011-12-12",
+                "open": "190.19",
+                "high": "192.12",
+                "low": "187.82",
+                "close": "191.83"
+            }, {
+                "date": "2011-12-13",
+                "open": "190.37",
+                "high": "193.20",
+                "low": "189.54",
+                "close": "190.39"
+            }, {
+                "date": "2011-12-16",
+                "open": "190.72",
+                "high": "192.65",
+                "low": "182.98",
+                "close": "184.40"
+            }, {
+                "date": "2011-12-17",
+                "open": "186.52",
+                "high": "187.33",
+                "low": "178.60",
+                "close": "182.98"
+            }, {
+                "date": "2011-12-18",
+                "open": "182.98",
+                "high": "184.64",
+                "low": "180.90",
+                "close": "183.12"
+            }, {
+                "date": "2011-12-19",
+                "open": "185.43",
+                "high": "187.83",
+                "low": "183.33",
+                "close": "187.21"
+            }, {
+                "date": "2011-12-20",
+                "open": "190.12",
+                "high": "193.91",
+                "low": "189.89",
+                "close": "193.91"
+            }, {
+                "date": "2011-12-23",
+                "open": "195.03",
+                "high": "199.33",
+                "low": "194.79",
+                "close": "198.80"
+            }, {
+                "date": "2011-12-25",
+                "open": "199.01",
+                "high": "200.96",
+                "low": "196.82",
+                "close": "198.95"
+            }, {
+                "date": "2011-12-26",
+                "open": "198.95",
+                "high": "202.96",
+                "low": "197.80",
+                "close": "198.57"
+            }, {
+                "date": "2011-12-27",
+                "open": "200.59",
+                "high": "201.56",
+                "low": "196.88",
+                "close": "199.83"
+            }, {
+                "date": "2011-12-30",
+                "open": "199.50",
+                "high": "200.50",
+                "low": "197.75",
+                "close": "198.08"
+            }, {
+                "date": "2012-01-01",
+                "open": "199.27",
+                "high": "200.26",
+                "low": "192.55",
+                "close": "194.84"
+            }, {
+                "date": "2012-01-02",
+                "open": "195.41",
+                "high": "197.39",
+                "low": "192.69",
+                "close": "194.93"
+            }, {
+                "date": "2012-01-03",
+                "open": "191.45",
+                "high": "193.00",
+                "low": "178.89",
+                "close": "180.05"
+            }, {
+                "date": "2012-01-06",
+                "open": "181.25",
+                "high": "183.60",
+                "low": "170.23",
+                "close": "177.64"
+            }, {
+                "date": "2012-01-07",
+                "open": "180.14",
+                "high": "182.46",
+                "low": "170.80",
+                "close": "171.25"
+            }, {
+                "date": "2012-01-08",
+                "open": "171.30",
+                "high": "179.50",
+                "low": "168.30",
+                "close": "179.40"
+            }, {
+                "date": "2012-01-09",
+                "open": "177.58",
+                "high": "181.00",
+                "low": "175.41",
+                "close": "178.02"
+            }, {
+                "date": "2012-01-10",
+                "open": "176.00",
+                "high": "177.85",
+                "low": "170.00",
+                "close": "172.69"
+            }, {
+                "date": "2012-01-13",
+                "open": "177.52",
+                "high": "179.42",
+                "low": "175.17",
+                "close": "178.78"
+            }, {
+                "date": "2012-01-14",
+                "open": "177.72",
+                "high": "179.22",
+                "low": "164.66",
+                "close": "169.04"
+            }, {
+                "date": "2012-01-15",
+                "open": "165.23",
+                "high": "169.01",
+                "low": "156.70",
+                "close": "159.64"
+            }, {
+                "date": "2012-01-16",
+                "open": "161.51",
+                "high": "165.36",
+                "low": "158.42",
+                "close": "160.89"
+            }, {
+                "date": "2012-01-17",
+                "open": "161.71",
+                "high": "165.75",
+                "low": "159.61",
+                "close": "161.36"
+            }, {
+                "date": "2012-01-21",
+                "open": "148.06",
+                "high": "159.98",
+                "low": "146.00",
+                "close": "155.64"
+            }, {
+                "date": "2012-01-22",
+                "open": "136.19",
+                "high": "140.00",
+                "low": "126.14",
+                "close": "139.07"
+            }, {
+                "date": "2012-01-23",
+                "open": "139.99",
+                "high": "140.70",
+                "low": "132.01",
+                "close": "135.60"
+            }, {
+                "date": "2012-01-24",
+                "open": "138.99",
+                "high": "139.09",
+                "low": "129.61",
+                "close": "130.01"
+            }, {
+                "date": "2012-01-27",
+                "open": "128.16",
+                "high": "133.20",
+                "low": "126.45",
+                "close": "130.01"
+            }, {
+                "date": "2012-01-28",
+                "open": "131.15",
+                "high": "132.79",
+                "low": "129.05",
+                "close": "131.54"
+            }, {
+                "date": "2012-01-29",
+                "open": "131.37",
+                "high": "135.45",
+                "low": "130.00",
+                "close": "132.18"
+            }, {
+                "date": "2012-01-30",
+                "open": "129.45",
+                "high": "136.65",
+                "low": "129.40",
+                "close": "135.36"
+            }, {
+                "date": "2012-01-31",
+                "open": "136.24",
+                "high": "136.59",
+                "low": "132.18",
+                "close": "133.75"
+            }, {
+                "date": "2012-02-03",
+                "open": "134.21",
+                "high": "135.90",
+                "low": "131.42",
+                "close": "131.65"
+            }, {
+                "date": "2012-02-04",
+                "open": "130.43",
+                "high": "134.00",
+                "low": "128.90",
+                "close": "129.36"
+            }, {
+                "date": "2012-02-05",
+                "open": "130.83",
+                "high": "131.92",
+                "low": "121.77",
+                "close": "122.00"
+            }, {
+                "date": "2012-02-06",
+                "open": "119.97",
+                "high": "124.78",
+                "low": "117.27",
+                "close": "121.24"
+            }, {
+                "date": "2012-02-07",
+                "open": "122.08",
+                "high": "125.70",
+                "low": "121.60",
+                "close": "125.48"
+            }, {
+                "date": "2012-02-10",
+                "open": "128.01",
+                "high": "129.98",
+                "low": "127.20",
+                "close": "129.45"
+            }, {
+                "date": "2012-02-11",
+                "open": "130.70",
+                "high": "131.00",
+                "low": "123.62",
+                "close": "124.86"
+            }, {
+                "date": "2012-02-12",
+                "open": "126.68",
+                "high": "129.78",
+                "low": "125.63",
+                "close": "129.40"
+            }],
+
+            "export": {
+                "enabled": false,
+                "position": "bottom-right"
+            }
+        });
+
+        chart.addListener("rendered", zoomChart);
+        zoomChart();
+
+        // this method is called when chart is first inited as we listen for "dataUpdated" event
+        function zoomChart() {
+            // different zoom methods can be used - zoomToIndexes, zoomToDates, zoomToCategoryValues
+            chart.zoomToIndexes(chart.dataProvider.length, chart.dataProvider.length);
+        }
+    </script>
+
+    <script>
+        $('.singleChartContainer_right_top_list button').on('click', function () {
+            $('.singleChartContainer_right_top_list button').removeClass('my_active')
+            $(this).addClass('my_active')
+        });
+
+
+
+        $('.singleChartContainer_top_menu button').on('click', function () {
+            $('.singleChartContainer_top_menu button ').removeClass('my_active');
+            $(this).addClass('my_active');
+        });
+
+        $('.tableContainer_Menu_list button').on('click', function () {
+            $('.tableContainer_Menu_list button ').removeClass('my_active');
+            $(this).addClass('my_active');
+        });
+
+
+    </script>
+
+</body>
+
+</html>

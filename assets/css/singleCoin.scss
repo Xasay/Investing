@@ -1,0 +1,577 @@
+.single_chart_body {
+  background-color: #fcfcfd;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+.barChartSection_top {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.coinName {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #141416;
+  margin-right: 5px;
+  .increase {
+    padding: 2px 8px;
+    background: #58bd7d;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fcfcfd;
+  }
+}
+.coin_excerpt {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #777e90;
+}
+
+.singleCoin_prices {
+  margin-left: 32px;
+  .newPrice {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    &.azalma {
+      color: #ff6838;
+    }
+    &.artma {
+      color: #58bd7d;
+    }
+  }
+  .oldPrice {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #777e90;
+  }
+  button {
+    padding: 7px 13px;
+    border: 2px solid #e6e8ec;
+    box-sizing: border-box;
+    border-radius: 32px;
+    background-color: transparent;
+    height: max-content;
+    margin-left: 13px;
+    color: #777e90;
+  }
+}
+
+.timeIntervalList {
+  & li:not(:last-child) {
+    border-right: 1px solid #ddd;
+  }
+
+  .timeIntervalList_item {
+    padding-right: 41px;
+    padding-left: 24px;
+    .listItem_timeTab {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      color: #777e90;
+      margin-bottom: 5px;
+    }
+    .listItem_coinChange {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #23262f;
+    }
+  }
+}
+
+.singleChartContainer {
+  background-color: #fff;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.singleChartContainer_left {
+  width: 20%;
+}
+
+.filterBtn {
+  background-color: #f1f2f4 !important;
+}
+
+.red_color {
+  color: #ff6838;
+}
+
+.singleChartContainer_left_table {
+  th {
+    font-size: 12px;
+  }
+
+  tr {
+    margin: 5px 0px;
+  }
+
+  td {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.singleChartContainer_right {
+  width: 80%;
+}
+
+.singleChartContainer_right_top_list {
+  margin-left: 5px;
+  button {
+    padding: 7px 15px;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 21px;
+    color: #777e90;
+    &.my_active {
+      background: #e6e8ec;
+      border-radius: 128.5px;
+      color: black;
+    }
+  }
+}
+
+.singleChartContainer_top_menu {
+  padding: 0px;
+  button {
+    padding: 7px 15px;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 21px;
+    color: #777e90;
+    &.my_active {
+      background: #e6e8ec;
+      border-radius: 128.5px;
+      color: black;
+    }
+  }
+}
+
+.singleChartContainer_top_link {
+  span {
+    font-weight: 500;
+    font-size: 15.48px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #777e90;
+  }
+
+  a {
+    margin-left: 4px;
+    font-weight: 600;
+    font-size: 15.48px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #23262f;
+    text-decoration: none;
+    &:hover {
+      color: #23262f;
+    }
+    span {
+      color: black;
+      margin-left: 5px;
+    }
+  }
+}
+
+.left_form {
+  width: 49%;
+}
+
+.right_form {
+  width: 49%;
+}
+
+.left_form_title {
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30.96px;
+    line-height: 41px;
+    color: #23262f;
+    text-transform: capitalize;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15.48px;
+    line-height: 26px;
+    color: #23262f;
+  }
+}
+
+.leftFormInputContainer {
+  div {
+    border: 2.58px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 15.48px;
+    padding: 15px 20px;
+    margin-bottom: 16px;
+    input {
+      width: 50%;
+    }
+    span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 31px;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      color: #23262f;
+    }
+    .moneyType {
+      margin-left: 5px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 31px;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      color: #777e90;
+      border-left: 2px solid #3772ff;
+      padding-left: 5px;
+    }
+  }
+
+  button {
+    text-transform: capitalize;
+    background: #58bd7d;
+    border-radius: 116.1px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+}
+
+.rightFormInputContainer {
+  div {
+    border: 2.58px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 15.48px;
+    padding: 15px 20px;
+    margin-bottom: 16px;
+    input {
+      width: 50%;
+    }
+    span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 31px;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      color: #23262f;
+    }
+    .moneyType {
+      margin-left: 5px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 31px;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      color: #777e90;
+      border-left: 2px solid #3772ff;
+      padding-left: 5px;
+    }
+  }
+
+  button {
+    text-transform: capitalize;
+    background: #ff6838;
+    border-radius: 116.1px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+}
+
+.tableContainerBlock_table {
+  th {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #777e90;
+  }
+
+  .time_td {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #777e90;
+  }
+
+  .price_td {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #58bd7d;
+  }
+
+  .amount_td {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #23262f;
+  }
+}
+
+.tableContainer_Menu_list {
+  margin-top: 15px;
+  padding: 0px;
+  button {
+    padding: 7px 15px;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 21px;
+    color: #777e90;
+    &.my_active {
+      background: #e6e8ec;
+      border-radius: 128.5px;
+      color: black;
+    }
+  }
+}
+
+@media (max-width: 1075px) {
+  .timeIntervalList .timeIntervalList_item {
+    padding-right: 16px;
+    padding-left: 19px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .left_form_title h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .singleChartContainer_left {
+    width: 32%;
+  }
+  .singleChartContainer_right {
+    width: 68%;
+  }
+}
+
+@media (max-width: 950px) {
+  .barChartSection_top {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 920px) {
+  .timeIntervalList {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 905px) {
+  .leftFormInputContainer div {
+    padding: 5px;
+  }
+
+  .leftFormInputContainer div .moneyType {
+    line-height: 14px;
+  }
+
+  .rightFormInputContainer div {
+    padding: 5px;
+  }
+
+  .rightFormInputContainer div .moneyType {
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 890px) {
+  .singleCoin_prices {
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 870px) {
+  .singleCoin_prices button {
+    padding: 0px 7px;
+  }
+}
+
+@media (max-width: 816px) {
+  .timeIntervalList .timeIntervalList_item {
+    padding-right: 9px;
+    padding-left: 11px;
+  }
+
+  .coinName {
+    font-size: 19px;
+  }
+
+  .singleCoin_prices .newPrice {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 735px) {
+  .singleCoin_prices {
+    margin-left: 0px;
+  }
+
+  .singleCoin_prices button {
+    margin-left: 2px;
+  }
+
+  .leftFormInputContainer button {
+    padding: 9px;
+  }
+
+  .rightFormInputContainer button {
+    padding: 9px;
+  }
+}
+
+@media (max-width: 700px) {
+  .myFirstCssClass {
+    flex-direction: column;
+  }
+
+  .singleChartContainer_left {
+    width: 100%;
+  }
+  .singleChartContainer_right {
+    width: 100%;
+  }
+
+  .singleChartContainer_form {
+    flex-direction: row !important ;
+  }
+}
+
+@media (max-width: 685px) {
+  .barChartSection_top > div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 570px) {
+  .coinName {
+    font-size: 16px;
+  }
+
+  .singleCoin_prices .newPrice {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 555px) {
+  .barChartSection_top {
+    flex-direction: column;
+  }
+
+  .barChartSection_top > div {
+    flex-direction: unset;
+  }
+
+  .timeIntervalList {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 525px) {
+  .singleChartContainer_form {
+    flex-direction: column !important ;
+  }
+
+  .left_form {
+    width: 100%;
+  }
+  .right_form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeIntervalList .timeIntervalList_item {
+    padding-right: 6px;
+    padding-left: 1px;
+  }
+
+  .singleChartContainer_right_top_list button{
+    padding: 5px;
+  }
+
+  .timeIntervalList {
+    min-width: 277px;
+  }
+
+  .singleChartContainer_top{
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width:460px) {
+  .tableContainerBlock_tableContainer{
+    overflow-x: scroll;
+  }
+}
+
+
+@media (max-width:450px) {
+  .tableContainer_Menu_list button{
+    padding: 5px;
+  }
+}
+
+
+
+@media (max-width: 405px) {
+  .timeIntervalList {
+    // min-width: 385px;
+    flex-wrap: wrap;
+    li {
+      margin-top: 5px;
+    }
+  }
+}
+
+@media (max-width:365px) {
+  .tableContainer_Menu_list button{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,265 @@
+.footer_in{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.footer_logo{
+    margin-top: 57px;
+}
+
+
+.operations{
+    width: 25%;
+    padding-left: 20px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    border-right: 1px solid #ddd;
+}
+
+
+
+.operation_list{
+    padding: 0%;
+    margin: 0%;
+}
+
+.operation_list .operation_item  a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #777E90;
+    margin-bottom: 5px;
+    text-decoration: none;
+
+}
+
+.operation_list .operation_item  a:hover{
+    color: #777E90;
+}
+
+
+.contacts{
+   width: 25%;
+   padding-top: 66px;
+   padding-left: 5px;
+    border-right: 1px solid #ddd;
+}
+
+
+.adres_list{
+    padding: 0%;
+    margin: 0%;
+}
+
+.contact_title{
+    font-family: 'Poppins Regular ';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #23262F;
+    margin-bottom: 40px;
+
+}
+
+.adres_item a {
+    font-family: 'Poppins Regular ';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #23262F;
+    margin-bottom: 8px;
+    text-decoration: none;
+
+}
+
+.adres_item a:hover{
+    color: #23262F;
+}
+
+.newsletter_title{
+    font-family: 'Poppins Regular ';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #23262F;
+    margin-bottom: 40px;
+}
+
+
+.newsletter{
+    /* padding: 57px  0px 57px 0px; */
+    width: 50%;
+    padding-top: 64px;
+    padding-left: 5px;
+    /* margin-left: 68px; */
+}
+
+.newsletter_excerpt{
+    font-family: 'Poppins Regular ';
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #23262F;
+}
+
+
+.email_container{
+    border: 2px solid #E6E8EC;
+    box-sizing: border-box;
+    border-radius: 90px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 256px;
+}
+
+
+.send_mail_btn{
+    width: 32px;
+    height: 32px;
+    background-color:#3772FF ;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.footer_bottom_in{
+    padding: 20px;
+}
+
+
+.company_rights {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Poppins Regular ';
+    color: #777E90;
+
+}
+
+.company_rights a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Poppins Regular ';
+    text-decoration: none ;
+    color: #777E90;
+}
+
+
+.networks_list .list_item{
+    padding-right: 5px;
+}
+
+
+.networks_list .list_item a img{
+    width: 20px;
+    height: 20px;
+
+}
+
+
+@media (max-width:980px) {
+    .operations{
+        padding-right: 0px;
+        width: 246px;
+    }
+
+    .contacts{
+        padding-right: 2px;
+        width: 246px;
+    }
+}
+
+
+@media (max-width:945px) {
+    .contacts{
+       margin-left: 0px;
+        padding-left: 6px;
+        width: 323px;
+    }
+}
+
+@media (max-width:625px) {
+    .footer_in_basic{
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .operations{
+        width: 202px;
+    }
+
+    .contacts{
+        width: 203px;
+        border: none;
+    }
+
+    .newsletter{
+        border-top: 1px solid #ddd;
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:570px) {
+    .footer_bottom_in{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company_rights{
+        text-align: center;
+    }
+}
+
+
+
+
+
+@media (max-width:450px){
+    .operations{
+        width: 173px;
+    }
+}
+
+@media (max-width:423px) {
+
+    .footer_logo{
+        margin-left: 12px;
+    }
+
+
+    .operations{
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .contacts{
+        width: 100%;
+        padding-left: 12px;
+        border-top: 1px solid #ddd;
+    }
+
+    .newsletter{
+        width: 100%;
+        padding-left: 15px;
+    }
+}
